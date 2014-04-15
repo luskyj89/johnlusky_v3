@@ -55,6 +55,7 @@ function init() {
 		scale:true,
 		zIndex:0
 	});
+		
 };
 
 $(document).ready(function() {
@@ -82,3 +83,16 @@ $(document).ready(function() {
 $( window ).resize(function() {
 	resizer();
 });
+
+/*
+$(window).scroll( function() {
+	if ($(window).scrollTop() > frameHeight - 10) {
+		// Fires when scrolling down past initial frame height
+		$(".nav-controller").css('opacity', '1');
+	}
+	else {
+		// First when the page is above initial frame height
+		$(".nav-controller").css('opacity', '0');
+	}
+});
+*/

@@ -186,6 +186,17 @@ h1, h2, h3 {
   
 }
 
+.nav-controller {
+	//opacity: 0;
+}
+
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+	background: black;
+	z-index: 50;
+	min-width: 100%;
+	padding: 10px;
+}
+
 /// About
 
 #about {
@@ -201,6 +212,52 @@ h1, h2, h3 {
     text-indent: -9999px;
   }
   
+}
+
+#about-content {
+  min-height: 1500px;
+}
+
+/// Work
+
+#work {
+	
+  h2 {
+    position: relative;
+    left: -65px;
+    margin-top: 110px;
+    width: 400px;
+    height: 215px;
+    background: transparent url(../img/sprite-headers.png) no-repeat;
+    background-position: 0 -152px;
+    text-indent: -9999px;
+  }
+  
+}
+
+#work-content {
+  min-height: 1500px;
+}
+
+/// Contact
+
+#contact {  
+  
+  h2 {
+    position: relative;
+    left: -65px;
+    margin-top: 110px;
+    width: 400px;
+    height: 215px;
+    background: transparent url(../img/sprite-headers.png) no-repeat;
+    background-position: 0 -152px;
+    text-indent: -9999px;
+  }
+  
+}
+
+#contact-content {
+  min-height: 1500px;
 }
 
 

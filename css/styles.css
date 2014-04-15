@@ -9036,6 +9036,14 @@ h1, h2, h3 {
 }
 
 /* line 193, ../_uncompressed/sass/styles.scss */
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+  background: black;
+  z-index: 50;
+  min-width: 100%;
+  padding: 10px;
+}
+
+/* line 204, ../_uncompressed/sass/styles.scss */
 #about h2 {
   position: relative;
   left: -65px;
@@ -9047,8 +9055,47 @@ h1, h2, h3 {
   text-indent: -9999px;
 }
 
+/* line 217, ../_uncompressed/sass/styles.scss */
+#about-content {
+  min-height: 1500px;
+}
+
+/* line 225, ../_uncompressed/sass/styles.scss */
+#work h2 {
+  position: relative;
+  left: -65px;
+  margin-top: 110px;
+  width: 400px;
+  height: 215px;
+  background: transparent url(../img/sprite-headers.png) no-repeat;
+  background-position: 0 -152px;
+  text-indent: -9999px;
+}
+
+/* line 238, ../_uncompressed/sass/styles.scss */
+#work-content {
+  min-height: 1500px;
+}
+
+/* line 246, ../_uncompressed/sass/styles.scss */
+#contact h2 {
+  position: relative;
+  left: -65px;
+  margin-top: 110px;
+  width: 400px;
+  height: 215px;
+  background: transparent url(../img/sprite-headers.png) no-repeat;
+  background-position: 0 -152px;
+  text-indent: -9999px;
+}
+
+/* line 259, ../_uncompressed/sass/styles.scss */
+#contact-content {
+  min-height: 1500px;
+}
+
 @media only screen and (max-height: 800px) {
-  /* line 213, ../_uncompressed/sass/styles.scss */
+  /* line 270, ../_uncompressed/sass/styles.scss */
   #hero .explore {
     display: none;
   }

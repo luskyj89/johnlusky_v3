@@ -29,16 +29,16 @@
     	
     	<div class="space"></div>
     	
-    	<div data-magellan-expedition="fixed" id="sticky-nav">
+    	<div data-magellan-expedition="fixed" id="sticky-nav" class="nav-controller">
 		  <dl class="sub-nav">
 		    <dd data-magellan-arrival="about"><a href="#about">About</a></dd>
 		    <dd data-magellan-arrival="work"><a href="#work">Work</a></dd>
 			<dd data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
-			<dd data-magellan-arrival="links"><a href="#links">Links</a></dd>
+			<dd><a href="#links">Links</a></dd>
 		  </dl>
 		</div>
     
-	    <div class="row" id="about">	
+	    <div class="row" id="about" data-magellan-destination="about">	
 			<div class="large-12 columns">
 				<h2>About</h2>
 			</div>
@@ -62,6 +62,36 @@
 				<p>About</p>
 			</div>
 		</div>
+		
+		<div class="row" id="work" data-magellan-destination="work">	
+			<div class="large-12 columns">
+				<h2 >Work</h2>
+			</div>
+		</div>
+		
+		<div class="row" id="work-content">	
+			<div class="large-8 columns">
+				<p>Work Slides</p>
+			</div>
+			<div class="large-4 columns">
+				<p>Work Description</p>
+			</div>
+		</div>
+		
+		<div class="row" id="contact" data-magellan-destination="contact">	
+			<div class="large-12 columns">
+				<h2>Contact</h2>
+			</div>
+		</div>
+		
+		<div class="row" id="contact-content">	
+			<div class="large-8 columns">
+				<p>Contact Form</p>
+			</div>
+			<div class="large-4 columns">
+				<p>Contact</p>
+			</div>
+		</div>
     	
     </section>
     
@@ -73,10 +103,22 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
     
-    <script>
-      $(document).foundation();
-    </script>
+    
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
+    
+    <script>
+      $(document).foundation({
+		  // specify the class used for active sections
+		  active_class: 'active',
+		  // how many pixels until the magellan bar sticks, 0 = auto
+		  threshold: frameHeight,
+		  // pixels from the top of destination for it to be considered active
+		  destination_threshold: 20,
+		  // calculation throttling to increase framerate
+		  throttle_delay: 50 
+		});
+    </script>
+    
   </body>
 </html>
