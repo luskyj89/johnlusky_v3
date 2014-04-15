@@ -9051,10 +9051,37 @@ p {
 }
 
 /* line 206, ../_uncompressed/sass/styles.scss */
+.sub-nav dt, .sub-nav dd, .sub-nav li {
+  font-family: "mohavesemibold";
+}
+/* line 211, ../_uncompressed/sass/styles.scss */
+.sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
+  border-radius: 0;
+  font-family: "mohavebold";
+  font-weight: normal;
+  background: transparent;
+  padding: 0.1875rem 1rem;
+  cursor: default;
+  color: #1effc7;
+}
+/* line 220, ../_uncompressed/sass/styles.scss */
+.sub-nav dt.active a:hover, .sub-nav dd.active a:hover, .sub-nav li.active a:hover {
+  background: transparent;
+}
+/* line 226, ../_uncompressed/sass/styles.scss */
+.sub-nav dt a, .sub-nav dd a, .sub-nav li a {
+  font-size: 23px;
+}
+/* line 229, ../_uncompressed/sass/styles.scss */
+.sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
+  background: transparent;
+}
+
+/* line 239, ../_uncompressed/sass/styles.scss */
 #about h2 {
   position: relative;
   left: -65px;
-  margin-top: 80px;
+  margin-top: 10px;
   width: 400px;
   height: 215px;
   background: transparent url(../img/sprite-headers.png) no-repeat;
@@ -9062,16 +9089,16 @@ p {
   text-indent: -9999px;
 }
 
-/* line 219, ../_uncompressed/sass/styles.scss */
+/* line 252, ../_uncompressed/sass/styles.scss */
 #about-content {
   min-height: 1500px;
 }
 
-/* line 227, ../_uncompressed/sass/styles.scss */
+/* line 260, ../_uncompressed/sass/styles.scss */
 #work h2 {
   position: relative;
   left: -65px;
-  margin-top: 80px;
+  margin-top: 10px;
   width: 400px;
   height: 215px;
   background: transparent url(../img/sprite-headers.png) no-repeat;
@@ -9079,16 +9106,16 @@ p {
   text-indent: -9999px;
 }
 
-/* line 240, ../_uncompressed/sass/styles.scss */
+/* line 273, ../_uncompressed/sass/styles.scss */
 #work-content {
   min-height: 1500px;
 }
 
-/* line 248, ../_uncompressed/sass/styles.scss */
+/* line 281, ../_uncompressed/sass/styles.scss */
 #contact h2 {
   position: relative;
   left: -65px;
-  margin-top: 80px;
+  margin-top: 10px;
   width: 460px;
   height: 215px;
   background: transparent url(../img/sprite-headers.png) no-repeat;
@@ -9096,13 +9123,13 @@ p {
   text-indent: -9999px;
 }
 
-/* line 261, ../_uncompressed/sass/styles.scss */
+/* line 294, ../_uncompressed/sass/styles.scss */
 #contact-content {
   min-height: 1500px;
 }
 
 @media only screen and (max-height: 800px) {
-  /* line 272, ../_uncompressed/sass/styles.scss */
+  /* line 305, ../_uncompressed/sass/styles.scss */
   #hero .explore {
     display: none;
   }

@@ -45,6 +45,10 @@ function init() {
 	  }
 	);
 	
+	$(".links-hvr").click(function(e) {
+		e.preventDefault();
+	});
+	
 	$(window).stellar();
 	
 	$('.space').videoBG({
@@ -74,7 +78,7 @@ $(document).ready(function() {
 	init();
 	
 	// Smooth scroll to anchors
-	$('a[href*=#]:not([href=#])').click(function() {
+	$('.smooth').click(function() {
 	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 	      || location.hostname == this.hostname) {
 	
@@ -82,7 +86,7 @@ $(document).ready(function() {
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	    if (target.length) {
 	      $('html,body').animate({
-	        scrollTop: target.offset().top
+	        scrollTop: target.offset().top - 95
 	      }, 1000, "easeOutQuad");
 	      return false;
 	    }

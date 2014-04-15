@@ -199,6 +199,39 @@ p {
 	color: $white;
 }
 
+.sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
+	
+}
+
+.sub-nav dt, .sub-nav dd, .sub-nav li {
+	font-family: $mohaveSemi;
+	
+	&.active {
+		
+		a {
+			border-radius: 0;
+			font-family: $mohaveBold;
+			font-weight: normal;
+			background: transparent;
+			padding: 0.1875rem 1rem;
+			cursor: default;
+			color: $blue-green;
+			
+			&:hover {
+				background: transparent;
+			}	
+		}
+	}
+	
+	a {
+		font-size: 23px;
+		
+		&:hover {
+			background: transparent;
+		}
+	}  
+}
+
 /// About
 
 #about {
@@ -206,7 +239,7 @@ p {
   h2 {
     position: relative;
     left: -65px;
-    margin-top: 80px;
+    margin-top: 10px;
     width: 400px;
     height: 215px;
     background: transparent url(../img/sprite-headers.png) no-repeat;
@@ -227,7 +260,7 @@ p {
   h2 {
     position: relative;
     left: -65px;
-    margin-top: 80px;
+    margin-top: 10px;
     width: 400px;
     height: 215px;
     background: transparent url(../img/sprite-headers.png) no-repeat;
@@ -248,7 +281,7 @@ p {
   h2 {
     position: relative;
     left: -65px;
-    margin-top: 80px;
+    margin-top: 10px;
     width: 460px;
     height: 215px;
     background: transparent url(../img/sprite-headers.png) no-repeat;
