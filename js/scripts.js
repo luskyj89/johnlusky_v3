@@ -83,7 +83,7 @@ $(document).ready(function() {
 	    if (target.length) {
 	      $('html,body').animate({
 	        scrollTop: target.offset().top
-	      }, 2000, "easeOutQuad");
+	      }, 1000, "easeOutQuad");
 	      return false;
 	    }
 	  }
