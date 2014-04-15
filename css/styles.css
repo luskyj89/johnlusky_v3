@@ -8909,19 +8909,20 @@ th {
 body {
   -webkit-font-smoothing: antialiased;
   background: black url(../img/bg-main.png) repeat;
+  background-attachment: fixed;
 }
 
-/* line 74, ../_uncompressed/sass/styles.scss */
+/* line 75, ../_uncompressed/sass/styles.scss */
 h1, h2, h3 {
   font-family: "mohavesemibold";
 }
 
-/* line 78, ../_uncompressed/sass/styles.scss */
+/* line 79, ../_uncompressed/sass/styles.scss */
 #wrapper {
   position: relative;
 }
 
-/* line 84, ../_uncompressed/sass/styles.scss */
+/* line 85, ../_uncompressed/sass/styles.scss */
 .space {
   position: absolute;
   top: 0;
@@ -8933,7 +8934,7 @@ h1, h2, h3 {
   z-index: 999;
 }
 
-/* line 95, ../_uncompressed/sass/styles.scss */
+/* line 96, ../_uncompressed/sass/styles.scss */
 .carbon {
   position: relative;
   width: 100%;
@@ -8941,14 +8942,14 @@ h1, h2, h3 {
   z-index: 998;
 }
 
-/* line 102, ../_uncompressed/sass/styles.scss */
+/* line 103, ../_uncompressed/sass/styles.scss */
 #hero {
   position: relative;
   width: 100%;
   z-index: 1000;
   overflow: hidden;
 }
-/* line 108, ../_uncompressed/sass/styles.scss */
+/* line 109, ../_uncompressed/sass/styles.scss */
 #hero .logo {
   position: relative;
   left: 50%;
@@ -8960,7 +8961,7 @@ h1, h2, h3 {
   text-indent: -9999px;
   opacity: 0;
 }
-/* line 119, ../_uncompressed/sass/styles.scss */
+/* line 120, ../_uncompressed/sass/styles.scss */
 #hero .idd-hdr {
   position: relative;
   left: 50%;
@@ -8972,7 +8973,7 @@ h1, h2, h3 {
   text-indent: -9999px;
   opacity: 0;
 }
-/* line 130, ../_uncompressed/sass/styles.scss */
+/* line 131, ../_uncompressed/sass/styles.scss */
 #hero .explore {
   position: absolute;
   left: 50%;
@@ -8985,7 +8986,7 @@ h1, h2, h3 {
   text-indent: -9999px;
   opacity: 0;
 }
-/* line 142, ../_uncompressed/sass/styles.scss */
+/* line 143, ../_uncompressed/sass/styles.scss */
 #hero .tri-btn {
   display: block;
   position: absolute;
@@ -9006,48 +9007,54 @@ h1, h2, h3 {
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 153, ../_uncompressed/sass/styles.scss */
+/* line 154, ../_uncompressed/sass/styles.scss */
 #hero .tri-btn:hover {
   opacity: 1;
 }
-/* line 159, ../_uncompressed/sass/styles.scss */
+/* line 160, ../_uncompressed/sass/styles.scss */
 #hero .topnav-links {
   top: -124px;
   left: -442px;
   background: transparent url(../img/tri-btn-links.png) no-repeat;
 }
-/* line 166, ../_uncompressed/sass/styles.scss */
+/* line 167, ../_uncompressed/sass/styles.scss */
 #hero .topnav-contact {
   bottom: -128px;
   right: -442px;
   background: transparent url(../img/tri-btn-contact.png) no-repeat;
 }
-/* line 173, ../_uncompressed/sass/styles.scss */
+/* line 174, ../_uncompressed/sass/styles.scss */
 #hero .topnav-about {
   bottom: -128px;
   left: -442px;
   background: transparent url(../img/tri-btn-about.png) no-repeat;
 }
-/* line 180, ../_uncompressed/sass/styles.scss */
+/* line 181, ../_uncompressed/sass/styles.scss */
 #hero .topnav-work {
   top: -124px;
   right: -442px;
   background: transparent url(../img/tri-btn-work.png) no-repeat;
 }
 
-/* line 193, ../_uncompressed/sass/styles.scss */
+/* line 190, ../_uncompressed/sass/styles.scss */
 [data-magellan-expedition], [data-magellan-expedition-clone] {
+  height: 95px;
   background: black;
   z-index: 50;
   min-width: 100%;
   padding: 10px;
 }
 
-/* line 204, ../_uncompressed/sass/styles.scss */
+/* line 198, ../_uncompressed/sass/styles.scss */
+p {
+  color: #f0f1f1;
+}
+
+/* line 206, ../_uncompressed/sass/styles.scss */
 #about h2 {
   position: relative;
   left: -65px;
-  margin-top: 110px;
+  margin-top: 80px;
   width: 400px;
   height: 215px;
   background: transparent url(../img/sprite-headers.png) no-repeat;
@@ -9055,47 +9062,47 @@ h1, h2, h3 {
   text-indent: -9999px;
 }
 
-/* line 217, ../_uncompressed/sass/styles.scss */
+/* line 219, ../_uncompressed/sass/styles.scss */
 #about-content {
   min-height: 1500px;
 }
 
-/* line 225, ../_uncompressed/sass/styles.scss */
+/* line 227, ../_uncompressed/sass/styles.scss */
 #work h2 {
   position: relative;
   left: -65px;
-  margin-top: 110px;
+  margin-top: 80px;
   width: 400px;
   height: 215px;
   background: transparent url(../img/sprite-headers.png) no-repeat;
-  background-position: 0 -152px;
+  background-position: 0 -558px;
   text-indent: -9999px;
 }
 
-/* line 238, ../_uncompressed/sass/styles.scss */
+/* line 240, ../_uncompressed/sass/styles.scss */
 #work-content {
   min-height: 1500px;
 }
 
-/* line 246, ../_uncompressed/sass/styles.scss */
+/* line 248, ../_uncompressed/sass/styles.scss */
 #contact h2 {
   position: relative;
   left: -65px;
-  margin-top: 110px;
-  width: 400px;
+  margin-top: 80px;
+  width: 460px;
   height: 215px;
   background: transparent url(../img/sprite-headers.png) no-repeat;
-  background-position: 0 -152px;
+  background-position: 0 -353px;
   text-indent: -9999px;
 }
 
-/* line 259, ../_uncompressed/sass/styles.scss */
+/* line 261, ../_uncompressed/sass/styles.scss */
 #contact-content {
   min-height: 1500px;
 }
 
 @media only screen and (max-height: 800px) {
-  /* line 270, ../_uncompressed/sass/styles.scss */
+  /* line 272, ../_uncompressed/sass/styles.scss */
   #hero .explore {
     display: none;
   }

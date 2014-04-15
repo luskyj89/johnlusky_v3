@@ -69,6 +69,7 @@ $mohaveSemi: 'mohavesemibold';
 body {
   -webkit-font-smoothing: antialiased;
   background: $black url(../img/bg-main.png) repeat;
+  background-attachment: fixed;
 }
 
 h1, h2, h3 {
@@ -186,15 +187,16 @@ h1, h2, h3 {
   
 }
 
-.nav-controller {
-	//opacity: 0;
-}
-
 [data-magellan-expedition], [data-magellan-expedition-clone] {
+	height: 95px;
 	background: black;
 	z-index: 50;
 	min-width: 100%;
 	padding: 10px;
+}
+
+p {
+	color: $white;
 }
 
 /// About
@@ -204,7 +206,7 @@ h1, h2, h3 {
   h2 {
     position: relative;
     left: -65px;
-    margin-top: 110px;
+    margin-top: 80px;
     width: 400px;
     height: 215px;
     background: transparent url(../img/sprite-headers.png) no-repeat;
@@ -225,11 +227,11 @@ h1, h2, h3 {
   h2 {
     position: relative;
     left: -65px;
-    margin-top: 110px;
+    margin-top: 80px;
     width: 400px;
     height: 215px;
     background: transparent url(../img/sprite-headers.png) no-repeat;
-    background-position: 0 -152px;
+    background-position: 0 -558px;
     text-indent: -9999px;
   }
   
@@ -246,11 +248,11 @@ h1, h2, h3 {
   h2 {
     position: relative;
     left: -65px;
-    margin-top: 110px;
-    width: 400px;
+    margin-top: 80px;
+    width: 460px;
     height: 215px;
     background: transparent url(../img/sprite-headers.png) no-repeat;
-    background-position: 0 -152px;
+    background-position: 0 -353px;
     text-indent: -9999px;
   }
   
