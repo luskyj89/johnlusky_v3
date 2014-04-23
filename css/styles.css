@@ -9046,15 +9046,30 @@ h1, h2, h3 {
 }
 
 /* line 198, ../_uncompressed/sass/styles.scss */
+[data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
+  margin: 0 33px;
+}
+/* line 201, ../_uncompressed/sass/styles.scss */
+[data-magellan-expedition] .sub-nav dd:first-child, [data-magellan-expedition-clone] .sub-nav dd:first-child {
+  margin: 0 33px 0 60px;
+}
+
+/* line 206, ../_uncompressed/sass/styles.scss */
 p {
   color: #f0f1f1;
 }
 
-/* line 206, ../_uncompressed/sass/styles.scss */
+/* line 214, ../_uncompressed/sass/styles.scss */
+.sub-nav {
+  width: 768px;
+  margin: 0 auto;
+}
+
+/* line 219, ../_uncompressed/sass/styles.scss */
 .sub-nav dt, .sub-nav dd, .sub-nav li {
   font-family: "mohavesemibold";
 }
-/* line 211, ../_uncompressed/sass/styles.scss */
+/* line 224, ../_uncompressed/sass/styles.scss */
 .sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
   border-radius: 0;
   font-family: "mohavebold";
@@ -9064,20 +9079,20 @@ p {
   cursor: default;
   color: #1effc7;
 }
-/* line 220, ../_uncompressed/sass/styles.scss */
+/* line 233, ../_uncompressed/sass/styles.scss */
 .sub-nav dt.active a:hover, .sub-nav dd.active a:hover, .sub-nav li.active a:hover {
   background: transparent;
 }
-/* line 226, ../_uncompressed/sass/styles.scss */
+/* line 239, ../_uncompressed/sass/styles.scss */
 .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
   font-size: 23px;
 }
-/* line 229, ../_uncompressed/sass/styles.scss */
+/* line 242, ../_uncompressed/sass/styles.scss */
 .sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
   background: transparent;
 }
 
-/* line 239, ../_uncompressed/sass/styles.scss */
+/* line 252, ../_uncompressed/sass/styles.scss */
 #about h2 {
   position: relative;
   left: -65px;
@@ -9089,12 +9104,12 @@ p {
   text-indent: -9999px;
 }
 
-/* line 252, ../_uncompressed/sass/styles.scss */
+/* line 265, ../_uncompressed/sass/styles.scss */
 #about-content {
   min-height: 1500px;
 }
 
-/* line 260, ../_uncompressed/sass/styles.scss */
+/* line 273, ../_uncompressed/sass/styles.scss */
 #work h2 {
   position: relative;
   left: -65px;
@@ -9106,12 +9121,12 @@ p {
   text-indent: -9999px;
 }
 
-/* line 273, ../_uncompressed/sass/styles.scss */
+/* line 286, ../_uncompressed/sass/styles.scss */
 #work-content {
   min-height: 1500px;
 }
 
-/* line 281, ../_uncompressed/sass/styles.scss */
+/* line 294, ../_uncompressed/sass/styles.scss */
 #contact h2 {
   position: relative;
   left: -65px;
@@ -9123,13 +9138,13 @@ p {
   text-indent: -9999px;
 }
 
-/* line 294, ../_uncompressed/sass/styles.scss */
+/* line 307, ../_uncompressed/sass/styles.scss */
 #contact-content {
   min-height: 1500px;
 }
 
 @media only screen and (max-height: 800px) {
-  /* line 305, ../_uncompressed/sass/styles.scss */
+  /* line 318, ../_uncompressed/sass/styles.scss */
   #hero .explore {
     display: none;
   }
