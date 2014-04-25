@@ -30,13 +30,13 @@
     	<div class="space"></div>
     	
     	<div data-magellan-expedition="fixed" id="sticky-nav" class="nav-controller">
-		  <dl class="sub-nav">
-		    <dd data-magellan-arrival="about"><a href="#about">About</a></dd>
-		    <dd data-magellan-arrival="work"><a href="#work">Work</a></dd>
-		    <dd data-magellan-arrival="hero"><a href="#hero">JL</a></dd>
-			<dd data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
-			<dd><a href="#" class="links-hvr">Links</a></dd>
-		  </dl>
+		  	<dl class="sub-nav">
+			    <dd id="about-mn" data-magellan-arrival="about"><a href="#about">About</a></dd>
+			    <dd id="work-mn" data-magellan-arrival="work"><a href="#work">Work</a></dd>
+			    <dd data-magellan-arrival="hero"><a class="nav-logo" href="#hero">JL</a></dd>
+				<dd id="contact-mn" data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
+				<dd><a href="#" class="links-hvr">Links</a></dd>
+		  	</dl>
 		</div>
     
 	    <div class="row" id="about" data-magellan-destination="about">	
@@ -45,8 +45,18 @@
 			</div>
 		</div>
 		
-		<div class="row" id="about-content">	
-			<div class="large-6 columns">
+		<div class="row" id="about-content1">	
+			<div class="large-8 columns">
+				<div id="chart"></div>
+				<div class="bg-triangle"></div>
+			</div>
+			<div class="large-4 columns">
+				<img src="img/photo-me.jpg" alt="John Lusky" />
+			</div>
+		</div>
+		
+		<div class="row" id="about-content2">	
+			<div class="large-8 columns">
 				<p>Born in the strange, humble town of Birdsboro, Pennsylvania, I began experimenting with web design and web development 
 				when I was 13 years old. I began attending Philadelphia University in 2008, and I graduated with a B.S. in Interactive 
 				Design and Media in 2012. I started working at 1 Trick Pony- an ad agency based out of Hammonton, New Jersey- a few days 
@@ -59,8 +69,18 @@
 				<p>As far as other hobbies go, I dabble in photography and video, and I write for a gaming blog called Multitoad that I 
 				started with a friend. I also enjoy beer, filet mignon, and mozzarella sticks- probably in that order.</p>
 			</div>
-			<div class="large-6 columns">
-				<p>About</p>
+			<div class="large-4 columns">
+				<h3>Currently Accepting New Clients</h3>
+				<p>I’m currently accepting new freelance clients of all shapes and sizes. I’m available for both design and development of 
+				websites, email campaigns, applications, and more.</p>
+
+				<p>If you’re interested in getting kickass work for a reasonable price, <a href="#contact">get in touch</a> now.</p>
+				
+				<hr>
+				
+				<p>If you’d like a more comprehensive rundown
+				of my skills and work experience, you can
+				<a href="#">download my resume</a>.</p>
 			</div>
 		</div>
 		

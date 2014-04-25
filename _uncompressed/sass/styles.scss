@@ -55,31 +55,51 @@ $mohaveSemi: 'mohavesemibold';
 
 ///// Mixins
 @mixin absoCenter() {
-  position: absolute;
-  left: 50%;
+    position: absolute;
+    left: 50%;
 }
 
 @mixin relCenter() {
-  position: relative;
-  left: 50%;
+    position: relative;
+    left: 50%;
 }
 
 
 ///// Global Styles
 body {
-  -webkit-font-smoothing: antialiased;
-  background: $black url(../img/bg-main.png) repeat;
-  background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    background: $black url(../img/bg-main.png) repeat;
+    background-attachment: fixed;
 }
 
 h1, h2, h3 {
-  font-family: $mohaveSemi;
+    font-family: $mohaveSemi;
 }
 
 #wrapper {
-  position: relative;
+    position: relative;
 }
 
+hr {
+    border: solid $blue-green;
+    border-width: 4px 0 0;
+    margin: 1.25rem 0 1.1875rem;
+}
+
+a {
+    color: $blue-green;
+    font-weight: bold;
+    text-decoration: underline;
+    
+    &:hover {
+        color: $white;
+    }
+}
+
+h3 {
+    font-size: 23px;
+    color: $blue-green;
+}
 
 ///// Section Specific Styles
 .space {
@@ -188,8 +208,8 @@ h1, h2, h3 {
 }
 
 [data-magellan-expedition], [data-magellan-expedition-clone] {
-  	height: 95px;
-  	background: black;
+  	height: 110px;
+  	background: transparent url(../img/bg-nav.png) repeat-x;
   	z-index: 50;
   	min-width: 100%;
   	padding: 10px;
@@ -203,6 +223,7 @@ h1, h2, h3 {
     }
 }
 
+
 p {
   	color: $white;
 }
@@ -212,7 +233,7 @@ p {
 }
 
 .sub-nav {
-    width: 768px;
+    width: 878px;
     margin: 0 auto;
 }
 
@@ -238,11 +259,22 @@ p {
 	
 	a {
 		font-size: 23px;
-		
-		&:hover {
-			background: transparent;
-		}
 	}  
+}
+
+.nav-logo {
+    display: block;
+    position: relative;
+    top: -30px;
+    left: 12px;
+    width: 137px;
+    height: 136px;
+    background: transparent url(../img/gfx-logo-small.png) no-repeat;
+    text-indent: -9999px;
+  
+    &:hover {
+      opacity: .7;
+    }
 }
 
 /// About
@@ -262,9 +294,33 @@ p {
   
 }
 
-#about-content {
-  min-height: 1500px;
+#about-content1 {
+    position: relative;
+      
+    #chart {
+        display: none;
+        position: relative;
+        top: -70px;
+        left: -30px;
+        width: 664px;
+        height: 530px;
+        background: transparent url(../img/gfx-chart.png) no-repeat;
+        z-index: 10;
+    }
+    
+    .bg-triangle {
+        position: absolute;
+        top: -180px;
+        left: 130px;
+        width: 518px;
+        height: 473px;
+        background: transparent url(../img/gfx-triangle.png) no-repeat;
+        opacity: 0;
+        z-index: 9;
+    }
+  
 }
+
 
 /// Work
 

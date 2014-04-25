@@ -5,6 +5,10 @@
 // Public Vars
 var frameHeight = $(window).height();
 var frameWidth = $(window).width();
+var aboutMn = $("#about-mn");
+var workMn = $("#work-mn");
+var contactMn = $("#contact-mn");
+
 
 // Resizer
 function resizer(e) {
@@ -101,6 +105,20 @@ $( window ).resize(function() {
 
 
 $(window).scroll( function() {
+	
+	if ( aboutMn.hasClass("active") ) {
+		console.log("About");
+		
+		$("#chart").fadeIn(2000);
+		
+		$( ".bg-triangle" ).animate({
+		    opacity: 1,
+		    top: -80
+		  }, 1500, function() {
+		    // Animation complete.
+		});
+	}
+	
 	if ($(window).scrollTop() > frameHeight - 10) {
 		// Fires when scrolling down past initial frame height
 	}
