@@ -9060,7 +9060,7 @@ h3 {
   background: transparent url(../img/tri-btn-work.png) no-repeat;
 }
 
-/* line 210, ../_uncompressed/sass/styles.scss */
+/* line 213, ../_uncompressed/sass/styles.scss */
 [data-magellan-expedition], [data-magellan-expedition-clone] {
   height: 110px;
   background: transparent url(../img/bg-nav.png) repeat-x;
@@ -9069,31 +9069,40 @@ h3 {
   padding: 10px;
 }
 
-/* line 218, ../_uncompressed/sass/styles.scss */
+/* line 221, ../_uncompressed/sass/styles.scss */
 [data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
   margin: 0 33px;
 }
-/* line 221, ../_uncompressed/sass/styles.scss */
+/* line 224, ../_uncompressed/sass/styles.scss */
 [data-magellan-expedition] .sub-nav dd:first-child, [data-magellan-expedition-clone] .sub-nav dd:first-child {
   margin: 0 33px 0 60px;
 }
 
-/* line 227, ../_uncompressed/sass/styles.scss */
+/* line 229, ../_uncompressed/sass/styles.scss */
+.orbit-container .orbit-prev, .orbit-container .orbit-next {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 232, ../_uncompressed/sass/styles.scss */
+.orbit-container .orbit-prev:hover, .orbit-container .orbit-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 241, ../_uncompressed/sass/styles.scss */
 p {
   color: #f0f1f1;
 }
 
-/* line 235, ../_uncompressed/sass/styles.scss */
+/* line 249, ../_uncompressed/sass/styles.scss */
 .sub-nav {
   width: 878px;
   margin: 0 auto;
 }
 
-/* line 240, ../_uncompressed/sass/styles.scss */
+/* line 254, ../_uncompressed/sass/styles.scss */
 .sub-nav dt, .sub-nav dd, .sub-nav li {
   font-family: "mohavesemibold";
 }
-/* line 245, ../_uncompressed/sass/styles.scss */
+/* line 259, ../_uncompressed/sass/styles.scss */
 .sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
   border-radius: 0;
   font-family: "mohavebold";
@@ -9103,16 +9112,16 @@ p {
   cursor: default;
   color: #1effc7;
 }
-/* line 254, ../_uncompressed/sass/styles.scss */
+/* line 268, ../_uncompressed/sass/styles.scss */
 .sub-nav dt.active a:hover, .sub-nav dd.active a:hover, .sub-nav li.active a:hover {
   background: transparent;
 }
-/* line 260, ../_uncompressed/sass/styles.scss */
+/* line 274, ../_uncompressed/sass/styles.scss */
 .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
   font-size: 23px;
 }
 
-/* line 265, ../_uncompressed/sass/styles.scss */
+/* line 279, ../_uncompressed/sass/styles.scss */
 .nav-logo {
   display: block;
   position: relative;
@@ -9123,12 +9132,12 @@ p {
   background: transparent url(../img/gfx-logo-small.png) no-repeat;
   text-indent: -9999px;
 }
-/* line 275, ../_uncompressed/sass/styles.scss */
+/* line 289, ../_uncompressed/sass/styles.scss */
 .nav-logo:hover {
   opacity: .7;
 }
 
-/* line 284, ../_uncompressed/sass/styles.scss */
+/* line 298, ../_uncompressed/sass/styles.scss */
 #about h2 {
   position: relative;
   left: -65px;
@@ -9140,11 +9149,11 @@ p {
   text-indent: -9999px;
 }
 
-/* line 297, ../_uncompressed/sass/styles.scss */
+/* line 311, ../_uncompressed/sass/styles.scss */
 #about-content1 {
   position: relative;
 }
-/* line 300, ../_uncompressed/sass/styles.scss */
+/* line 314, ../_uncompressed/sass/styles.scss */
 #about-content1 #chart {
   display: none;
   position: relative;
@@ -9155,7 +9164,7 @@ p {
   background: transparent url(../img/gfx-chart.png) no-repeat;
   z-index: 10;
 }
-/* line 311, ../_uncompressed/sass/styles.scss */
+/* line 325, ../_uncompressed/sass/styles.scss */
 #about-content1 .bg-triangle {
   position: absolute;
   top: -180px;
@@ -9167,7 +9176,7 @@ p {
   z-index: 9;
 }
 
-/* line 329, ../_uncompressed/sass/styles.scss */
+/* line 343, ../_uncompressed/sass/styles.scss */
 #work h2 {
   position: relative;
   left: -65px;
@@ -9179,12 +9188,17 @@ p {
   text-indent: -9999px;
 }
 
-/* line 342, ../_uncompressed/sass/styles.scss */
-#work-content {
-  min-height: 1500px;
+/* line 356, ../_uncompressed/sass/styles.scss */
+.work-content {
+  margin-bottom: 100px;
+}
+/* line 359, ../_uncompressed/sass/styles.scss */
+.work-content a {
+  font-family: "mohavebold";
+  font-size: 20px;
 }
 
-/* line 350, ../_uncompressed/sass/styles.scss */
+/* line 370, ../_uncompressed/sass/styles.scss */
 #contact h2 {
   position: relative;
   left: -65px;
@@ -9196,13 +9210,13 @@ p {
   text-indent: -9999px;
 }
 
-/* line 363, ../_uncompressed/sass/styles.scss */
+/* line 383, ../_uncompressed/sass/styles.scss */
 #contact-content {
   min-height: 1500px;
 }
 
 @media only screen and (max-height: 800px) {
-  /* line 374, ../_uncompressed/sass/styles.scss */
+  /* line 394, ../_uncompressed/sass/styles.scss */
   #hero .explore {
     display: none;
   }

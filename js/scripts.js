@@ -64,17 +64,29 @@ function init() {
 		zIndex:0
 	});
 	
-	$(document).foundation({
-	  // specify the class used for active sections
-	  active_class: 'active',
-	  // how many pixels until the magellan bar sticks, 0 = auto
-	  threshold: 0,
-	  // pixels from the top of destination for it to be considered active
-	  destination_threshold: 20,
-	  // calculation throttling to increase framerate
-	  throttle_delay: 50 
-	});
+	// $(document).foundation({
+	  // // specify the class used for active sections
+	  // active_class: 'active',
+	  // // how many pixels until the magellan bar sticks, 0 = auto
+	  // threshold: 0,
+	  // // pixels from the top of destination for it to be considered active
+	  // destination_threshold: 20,
+	  // // calculation throttling to increase framerate
+	  // throttle_delay: 50 
+	// });
 		
+$(document).foundation({
+	orbit: {
+		animation: 'slide',
+		timer_speed: 1000,
+		animation_speed: 500,
+		navigation_arrows: true,
+		timer: false,
+		bullets: false,
+		slide_number: false
+	}
+});
+	
 };
 
 $(document).ready(function() {

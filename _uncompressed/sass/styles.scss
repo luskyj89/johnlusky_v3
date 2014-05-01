@@ -207,6 +207,9 @@ h3 {
   
 }
 
+
+// Foundation Overrides
+
 [data-magellan-expedition], [data-magellan-expedition-clone] {
   	height: 110px;
   	background: transparent url(../img/bg-nav.png) repeat-x;
@@ -222,6 +225,17 @@ h3 {
       margin: 0 33px 0 60px;
     }
 }
+
+.orbit-container .orbit-prev, .orbit-container .orbit-next {
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+}
+
+// End Foundation Overrides
 
 
 p {
@@ -326,21 +340,27 @@ p {
 
 #work {
 	
-  h2 {
-    position: relative;
-    left: -65px;
-    margin-top: 10px;
-    width: 400px;
-    height: 215px;
-    background: transparent url(../img/sprite-headers.png) no-repeat;
-    background-position: 0 -558px;
-    text-indent: -9999px;
-  }
+    h2 {
+        position: relative;
+        left: -65px;
+        margin-top: 10px;
+        width: 400px;
+        height: 215px;
+        background: transparent url(../img/sprite-headers.png) no-repeat;
+        background-position: 0 -558px;
+        text-indent: -9999px;
+    }
   
 }
 
-#work-content {
-  min-height: 1500px;
+.work-content {
+    margin-bottom: 100px;
+    
+    a {
+        font-family: $mohaveBold;
+        font-size: 20px;
+    }
+    
 }
 
 /// Contact
