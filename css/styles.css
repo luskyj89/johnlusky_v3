@@ -9063,7 +9063,7 @@ h3 {
 /* line 213, ../_uncompressed/sass/styles.scss */
 [data-magellan-expedition], [data-magellan-expedition-clone] {
   height: 110px;
-  background: transparent url(../img/bg-nav.png) repeat-x;
+  background: black url(../img/bg-nav.png) repeat-x;
   z-index: 50;
   min-width: 100%;
   padding: 10px;
@@ -9119,9 +9119,10 @@ p {
 /* line 274, ../_uncompressed/sass/styles.scss */
 .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
   font-size: 23px;
+  font-weight: normal;
 }
 
-/* line 279, ../_uncompressed/sass/styles.scss */
+/* line 280, ../_uncompressed/sass/styles.scss */
 .nav-logo {
   display: block;
   position: relative;
@@ -9132,12 +9133,12 @@ p {
   background: transparent url(../img/gfx-logo-small.png) no-repeat;
   text-indent: -9999px;
 }
-/* line 289, ../_uncompressed/sass/styles.scss */
+/* line 290, ../_uncompressed/sass/styles.scss */
 .nav-logo:hover {
   opacity: .7;
 }
 
-/* line 298, ../_uncompressed/sass/styles.scss */
+/* line 299, ../_uncompressed/sass/styles.scss */
 #about h2 {
   position: relative;
   left: -65px;
@@ -9149,11 +9150,11 @@ p {
   text-indent: -9999px;
 }
 
-/* line 311, ../_uncompressed/sass/styles.scss */
+/* line 312, ../_uncompressed/sass/styles.scss */
 #about-content1 {
   position: relative;
 }
-/* line 314, ../_uncompressed/sass/styles.scss */
+/* line 315, ../_uncompressed/sass/styles.scss */
 #about-content1 #chart {
   display: none;
   position: relative;
@@ -9164,7 +9165,7 @@ p {
   background: transparent url(../img/gfx-chart.png) no-repeat;
   z-index: 10;
 }
-/* line 325, ../_uncompressed/sass/styles.scss */
+/* line 326, ../_uncompressed/sass/styles.scss */
 #about-content1 .bg-triangle {
   position: absolute;
   top: -180px;
@@ -9176,7 +9177,7 @@ p {
   z-index: 9;
 }
 
-/* line 343, ../_uncompressed/sass/styles.scss */
+/* line 344, ../_uncompressed/sass/styles.scss */
 #work h2 {
   position: relative;
   left: -65px;
@@ -9188,17 +9189,17 @@ p {
   text-indent: -9999px;
 }
 
-/* line 356, ../_uncompressed/sass/styles.scss */
+/* line 357, ../_uncompressed/sass/styles.scss */
 .work-content {
   margin-bottom: 100px;
 }
-/* line 359, ../_uncompressed/sass/styles.scss */
+/* line 360, ../_uncompressed/sass/styles.scss */
 .work-content a {
   font-family: "mohavebold";
   font-size: 20px;
 }
 
-/* line 370, ../_uncompressed/sass/styles.scss */
+/* line 371, ../_uncompressed/sass/styles.scss */
 #contact h2 {
   position: relative;
   left: -65px;
@@ -9209,14 +9210,88 @@ p {
   background-position: 0 -353px;
   text-indent: -9999px;
 }
+/* line 382, ../_uncompressed/sass/styles.scss */
+#contact p {
+  margin: -35px 0 40px 0;
+  font-size: 17px;
+}
+/* line 387, ../_uncompressed/sass/styles.scss */
+#contact input, #contact textarea {
+  margin: 0 0 25px 0;
+  padding: 20px 13px;
+  background-color: transparent;
+  border: 8px solid rgba(30, 255, 199, 0.2);
+  font-family: "mohavesemibold";
+  font-weight: normal;
+  font-size: 22px;
+  color: #1effc7;
+  outline: none;
+}
+/* line 398, ../_uncompressed/sass/styles.scss */
+#contact input:focus, #contact textarea:focus {
+  border: 8px solid rgba(30, 255, 199, 0.8);
+  box-shadow: 0 0 35px rgba(30, 255, 199, 0.5);
+}
+/* line 405, ../_uncompressed/sass/styles.scss */
+#contact textarea {
+  height: 200px;
+  resize: none;
+  font-size: 17px;
+  font-family: arial, helvetica, sans-serif;
+}
+/* line 412, ../_uncompressed/sass/styles.scss */
+#contact input[type="submit"] {
+  width: 200px;
+  padding: 10px;
+  font-size: 34px;
+  color: #f0f1f1;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 421, ../_uncompressed/sass/styles.scss */
+#contact input[type="submit"]:hover {
+  color: #1effc7;
+  border: 8px solid rgba(30, 255, 199, 0.8);
+  box-shadow: 0 0 35px rgba(30, 255, 199, 0.5);
+}
+/* line 429, ../_uncompressed/sass/styles.scss */
+#contact ::-webkit-input-placeholder {
+  color: #f0f1f1;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 434, ../_uncompressed/sass/styles.scss */
+#contact ::-moz-placeholder {
+  color: #f0f1f1;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 439, ../_uncompressed/sass/styles.scss */
+#contact :-ms-input-placeholder {
+  color: #f0f1f1;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
 
-/* line 383, ../_uncompressed/sass/styles.scss */
-#contact-content {
-  min-height: 1500px;
+/* line 448, ../_uncompressed/sass/styles.scss */
+footer {
+  height: 205px;
+  border-top: 10px solid #1effc7;
+  background: black;
 }
 
 @media only screen and (max-height: 800px) {
-  /* line 394, ../_uncompressed/sass/styles.scss */
+  /* line 460, ../_uncompressed/sass/styles.scss */
   #hero .explore {
     display: none;
   }

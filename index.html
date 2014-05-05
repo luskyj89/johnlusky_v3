@@ -11,7 +11,7 @@
     
     <section id="wrapper">
     
-    	<section id="hero" data-magellan-destination="hero">
+    	<section id="hero" data-magellan-destination="hero" class="show-for-large-up">
     		<h1 class="logo">John Lusky</h1>
     		
     		<h2 class="idd-hdr">Interactive Developer/Designer. What can I do for you?</h2>
@@ -27,7 +27,7 @@
     	
     	<!--<div class="space" data-stellar-background-ratio=".5"></div>-->
     	
-    	<div class="space"></div>
+    	<div class="space show-for-large-up"></div>
     	
     	<div data-magellan-expedition="fixed" id="sticky-nav" class="nav-controller">
 		  	<dl class="sub-nav">
@@ -206,26 +206,28 @@
 			</div>
 		</div>
 		
-		<div class="row" id="contact" data-magellan-destination="contact">	
-			<div class="large-12 columns">
-				<h2>Contact</h2>
+		<form>
+			<div class="row" id="contact" data-magellan-destination="contact">	
+				<div class="large-7 columns">
+					<h2>Contact</h2>
+					<p>If you're interested in working with me, don't hesitate to reach out. For freelance projects, I'm available for any size of project. I'm open to anything from total rebrand and site designs/builds to email blasts.</p>
+					<input type="text" placeholder="Name" />
+					<input type="text" placeholder="Email" />
+					<textarea placeholder="What can I do for you?"></textarea>
+					<input type="submit" value="Send"/>
+				</div>
+				<div class="large-5 columns show-for-large-up">
+					<img src="img/bg-contact.png" />
+				</div>
 			</div>
-		</div>
-		
-		<div class="row" id="contact-content">	
-			<div class="large-8 columns">
-				<p>Contact Form</p>
-			</div>
-			<div class="large-4 columns">
-				<p>Contact</p>
-			</div>
-		</div>
+		</form>
     	
     </section>
     
-    
-    
-    
+    <footer>
+    	<a class="smooth" href="#hero">Back to top</a>
+    </footer>
+        
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
