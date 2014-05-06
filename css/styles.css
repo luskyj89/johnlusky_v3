@@ -9120,9 +9120,14 @@ p {
 .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
   font-size: 23px;
   font-weight: normal;
+  color: #f0f1f1;
+}
+/* line 279, ../_uncompressed/sass/styles.scss */
+.sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
+  color: #1effc7;
 }
 
-/* line 280, ../_uncompressed/sass/styles.scss */
+/* line 286, ../_uncompressed/sass/styles.scss */
 .nav-logo {
   display: block;
   position: relative;
@@ -9130,15 +9135,15 @@ p {
   left: 12px;
   width: 137px;
   height: 136px;
-  background: transparent url(../img/gfx-logo-small.png) no-repeat;
+  background: transparent url(../img/gfx-logo-small.png) no-repeat !important;
   text-indent: -9999px;
 }
-/* line 290, ../_uncompressed/sass/styles.scss */
+/* line 296, ../_uncompressed/sass/styles.scss */
 .nav-logo:hover {
   opacity: .7;
 }
 
-/* line 299, ../_uncompressed/sass/styles.scss */
+/* line 305, ../_uncompressed/sass/styles.scss */
 #about h2 {
   position: relative;
   left: -65px;
@@ -9150,11 +9155,11 @@ p {
   text-indent: -9999px;
 }
 
-/* line 312, ../_uncompressed/sass/styles.scss */
+/* line 318, ../_uncompressed/sass/styles.scss */
 #about-content1 {
   position: relative;
 }
-/* line 315, ../_uncompressed/sass/styles.scss */
+/* line 321, ../_uncompressed/sass/styles.scss */
 #about-content1 #chart {
   display: none;
   position: relative;
@@ -9165,7 +9170,7 @@ p {
   background: transparent url(../img/gfx-chart.png) no-repeat;
   z-index: 10;
 }
-/* line 326, ../_uncompressed/sass/styles.scss */
+/* line 332, ../_uncompressed/sass/styles.scss */
 #about-content1 .bg-triangle {
   position: absolute;
   top: -180px;
@@ -9177,7 +9182,7 @@ p {
   z-index: 9;
 }
 
-/* line 344, ../_uncompressed/sass/styles.scss */
+/* line 350, ../_uncompressed/sass/styles.scss */
 #work h2 {
   position: relative;
   left: -65px;
@@ -9189,17 +9194,17 @@ p {
   text-indent: -9999px;
 }
 
-/* line 357, ../_uncompressed/sass/styles.scss */
+/* line 363, ../_uncompressed/sass/styles.scss */
 .work-content {
   margin-bottom: 100px;
 }
-/* line 360, ../_uncompressed/sass/styles.scss */
+/* line 366, ../_uncompressed/sass/styles.scss */
 .work-content a {
   font-family: "mohavebold";
   font-size: 20px;
 }
 
-/* line 371, ../_uncompressed/sass/styles.scss */
+/* line 377, ../_uncompressed/sass/styles.scss */
 #contact h2 {
   position: relative;
   left: -65px;
@@ -9210,12 +9215,12 @@ p {
   background-position: 0 -353px;
   text-indent: -9999px;
 }
-/* line 382, ../_uncompressed/sass/styles.scss */
+/* line 388, ../_uncompressed/sass/styles.scss */
 #contact p {
   margin: -35px 0 40px 0;
   font-size: 17px;
 }
-/* line 387, ../_uncompressed/sass/styles.scss */
+/* line 393, ../_uncompressed/sass/styles.scss */
 #contact input, #contact textarea {
   margin: 0 0 25px 0;
   padding: 20px 13px;
@@ -9227,19 +9232,19 @@ p {
   color: #1effc7;
   outline: none;
 }
-/* line 398, ../_uncompressed/sass/styles.scss */
+/* line 404, ../_uncompressed/sass/styles.scss */
 #contact input:focus, #contact textarea:focus {
   border: 8px solid rgba(30, 255, 199, 0.8);
   box-shadow: 0 0 35px rgba(30, 255, 199, 0.5);
 }
-/* line 405, ../_uncompressed/sass/styles.scss */
+/* line 411, ../_uncompressed/sass/styles.scss */
 #contact textarea {
   height: 200px;
   resize: none;
   font-size: 17px;
   font-family: arial, helvetica, sans-serif;
 }
-/* line 412, ../_uncompressed/sass/styles.scss */
+/* line 418, ../_uncompressed/sass/styles.scss */
 #contact input[type="submit"] {
   width: 200px;
   padding: 10px;
@@ -9258,40 +9263,89 @@ p {
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 421, ../_uncompressed/sass/styles.scss */
+/* line 427, ../_uncompressed/sass/styles.scss */
 #contact input[type="submit"]:hover {
   color: #1effc7;
   border: 8px solid rgba(30, 255, 199, 0.8);
   box-shadow: 0 0 35px rgba(30, 255, 199, 0.5);
 }
-/* line 429, ../_uncompressed/sass/styles.scss */
+/* line 435, ../_uncompressed/sass/styles.scss */
 #contact ::-webkit-input-placeholder {
   color: #f0f1f1;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
-/* line 434, ../_uncompressed/sass/styles.scss */
+/* line 440, ../_uncompressed/sass/styles.scss */
 #contact ::-moz-placeholder {
   color: #f0f1f1;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
-/* line 439, ../_uncompressed/sass/styles.scss */
+/* line 445, ../_uncompressed/sass/styles.scss */
 #contact :-ms-input-placeholder {
   color: #f0f1f1;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 448, ../_uncompressed/sass/styles.scss */
+/* line 454, ../_uncompressed/sass/styles.scss */
 footer {
-  height: 205px;
+  min-height: 205px;
   border-top: 10px solid #1effc7;
   background: black;
+  box-shadow: 0 0 135px rgba(30, 255, 199, 0.3);
+}
+/* line 462, ../_uncompressed/sass/styles.scss */
+footer #footer li {
+  display: inline-block;
+  padding: 0 10px 0 6px;
+  font-size: 11px;
+  border-right: 1px solid #f0f1f1;
+  line-height: 11px;
+}
+/* line 469, ../_uncompressed/sass/styles.scss */
+footer #footer li:last-child {
+  border-right: 0;
+}
+/* line 473, ../_uncompressed/sass/styles.scss */
+footer #footer li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 480, ../_uncompressed/sass/styles.scss */
+footer #footer .back-to-top {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  margin: 30px 0 0 0;
+  padding: 80px 0 30px 0;
+  background: transparent url(../img/gfx-back-to-top.png) no-repeat;
+  font-family: "mohavesemibold";
+  font-size: 16px;
+  text-decoration: none;
+  color: #f0f1f1;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 497, ../_uncompressed/sass/styles.scss */
+footer #footer .back-to-top:hover {
+  background-position: 0 -5px;
 }
 
 @media only screen and (max-height: 800px) {
-  /* line 460, ../_uncompressed/sass/styles.scss */
+  /* line 513, ../_uncompressed/sass/styles.scss */
   #hero .explore {
     display: none;
   }

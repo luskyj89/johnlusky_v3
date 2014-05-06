@@ -103,21 +103,21 @@ h3 {
 
 ///// Section Specific Styles
 .space {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: .2;
-  z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: .2;
+	z-index: 999;
 }
 
 .carbon {
-  position: relative;
-  width: 100%;
-  background: $black url(../img/bg-main.png) repeat;
-  z-index: 998;
+	position: relative;
+	width: 100%;
+	background: $black url(../img/bg-main.png) repeat;
+	z-index: 998;
 }
 
 #hero {
@@ -274,6 +274,12 @@ p {
 	a {
 		font-size: 23px;
 		font-weight: normal;
+		color: $white;
+		
+		&:hover {
+			color: $blue-green;	
+		}
+		
 	}  
 }
 
@@ -284,7 +290,7 @@ p {
     left: 12px;
     width: 137px;
     height: 136px;
-    background: transparent url(../img/gfx-logo-small.png) no-repeat;
+    background: transparent url(../img/gfx-logo-small.png) no-repeat !important;
     text-indent: -9999px;
   
     &:hover {
@@ -446,9 +452,56 @@ p {
 }
 
 footer {
-	height: 205px;
+	min-height: 205px;
 	border-top: 10px solid $blue-green;
 	background: $black;
+	box-shadow: 0 0 135px rgba(30, 255, 199, 0.3);
+	
+	#footer {
+		
+		li {
+			display: inline-block;
+			padding: 0 10px 0 6px;
+			font-size: 11px;
+			border-right: 1px solid $white;
+			line-height: 11px;
+			
+			&:last-child {
+				border-right: 0;
+			}
+			
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+			
+		}
+		
+		.back-to-top {
+			display: block;
+			position: relative;
+			box-sizing: border-box;
+			width: 90px;
+			height: 90px;
+			margin: 30px 0 0 0;
+			padding: 80px 0 30px 0;
+			background: transparent url(../img/gfx-back-to-top.png) no-repeat;
+			font-family: $mohaveSemi;
+			font-size: 16px;
+			text-decoration: none;
+			color: $white;
+			@include transition-property(all);
+			@include transition-duration(.3s);
+			@include transition-timing-function(ease-out);
+			
+			&:hover {
+				background-position: 0 -5px;
+			}
+				
+		}
+		
+	}
+	
 }
 
 ///// Media Queries
