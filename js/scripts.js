@@ -75,18 +75,23 @@ function init() {
 	  // throttle_delay: 50 
 	// });
 		
-$(document).foundation({
-	orbit: {
-		animation: 'slide',
-		timer_speed: 1000,
-		animation_speed: 500,
-		navigation_arrows: true,
-		timer: false,
-		bullets: false,
-		slide_number: false
-	}
-});
-	
+	$(document).foundation({
+		orbit: {
+			animation: 'slide',
+			timer_speed: 1000,
+			animation_speed: 500,
+			navigation_arrows: true,
+			timer: false,
+			bullets: false,
+			slide_number: false
+		}
+	});
+
+	$(".smooth-mobile").click(function() {
+		$("#jl-mobile-nav").removeClass("expanded");
+		$("#nav-wrapper").removeClass("expanded");
+	});
+			
 };
 
 $(document).ready(function() {
@@ -109,6 +114,22 @@ $(document).ready(function() {
 	  }
 	});
 	
+	// Smooth scroll to anchors
+	$('.smooth-mobile').click(function() {
+	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	      || location.hostname == this.hostname) {
+	
+	    var target = $(this.hash);
+	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	    if (target.length) {
+	      $('html,body').animate({
+	        scrollTop: target.offset().top
+	      }, 1000, "easeOutQuad");
+	      return false;
+	    }
+	  }
+	});
+	
 });
 
 $( window ).resize(function() {
@@ -121,7 +142,7 @@ $(window).scroll( function() {
 	if ( aboutMn.hasClass("active") ) {
 		console.log("About");
 		
-		$("#chart").fadeIn(2000);
+		//$("#chart").fadeIn(2000);
 		
 		$( ".bg-triangle" ).animate({
 		    opacity: 1,

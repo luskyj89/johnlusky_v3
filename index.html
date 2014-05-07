@@ -29,7 +29,7 @@
     	
     	<div class="space show-for-large-up"></div>
     	
-    	<div data-magellan-expedition="fixed" id="sticky-nav" class="nav-controller">
+    	<div data-magellan-expedition="fixed" id="sticky-nav" class="nav-controller show-for-large-up">
 		  	<dl class="sub-nav">
 			    <dd id="about-mn" data-magellan-arrival="about"><a href="#about">About</a></dd>
 			    <dd id="work-mn" data-magellan-arrival="work"><a href="#work">Work</a></dd>
@@ -37,6 +37,35 @@
 				<dd id="contact-mn" data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
 				<dd><a href="#" class="links-hvr">Links</a></dd>
 		  	</dl>
+		</div>
+		
+		<div id="nav-wrapper" class="fixed">
+			<nav id="jl-mobile-nav" class="top-bar hide-for-large-up" data-topbar data-options="scrolltop: false">
+			  <ul class="title-area">
+			    <li class="name">
+			      <h1><a href="#about" class="mobile-nav-logo smooth">John Lusky</a></h1>
+			    </li>
+			    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+			  </ul>
+			
+			  <section class="top-bar-section">
+			    <!-- Right Nav Section -->
+			    <ul class="right">
+			      <li><a href="#about" class="smooth-mobile">About</a></li>
+		          <li><a href="#work" class="smooth-mobile">Work</a></li>
+		          <li><a href="#contact" class="smooth-mobile">Contact</a></li>
+		          <li class="has-dropdown">
+		          	<a href="#">Links</a>
+		          	<ul class="dropdown">
+		                <li><a href="#">Resume</a>
+		                <li><a href="https://www.linkedin.com/pub/john-lusky/46/780/a79">LinkedIn</a>
+		                <li><a href="https://twitter.com/lusky_xx89">Twitter</a>
+		                <li><a href="https://www.facebook.com/johnlusky">Facebook</a>
+		          	</ul>
+		          </li>
+			    </ul>			
+			  </section>			  
+			</nav>
 		</div>
     
 	    <div class="row" id="about" data-magellan-destination="about">	
@@ -47,8 +76,8 @@
 		
 		<div class="row" id="about-content1">	
 			<div class="large-8 columns">
-				<div id="chart"></div>
-				<div class="bg-triangle"></div>
+				<div id="chart" class="hide-for-small"></div>
+				<div class="bg-triangle hide-for-small"></div>
 			</div>
 			<div class="large-4 columns">
 				<img src="img/photo-me.jpg" alt="John Lusky" />
