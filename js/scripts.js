@@ -49,7 +49,7 @@ function init() {
 	  }
 	);
 	
-	$(".links-hvr").click(function(e) {
+	$(".links-hvr, .topnav-links").click(function(e) {
 		e.preventDefault();
 	});
 	
@@ -69,22 +69,6 @@ function init() {
 	  }
 	);
 	
-	$( ".links-hvr" ).hover(
-	  function() {
-	    $( ".link-sub-nav" ).fadeIn();
-	  }, function() {
-	    //$( ".links-hover" ).fadeOut();
-	  }
-	);
-	
-	$( ".link-sub-nav" ).hover(
-	  function() {
-	    //$( ".links-hover" ).css('display', 'block');
-	  }, function() {
-	    $( ".link-sub-nav" ).fadeOut();
-	  }
-	);
-	
 	$(window).stellar();
 	
 	$('.space').videoBG({
@@ -95,17 +79,6 @@ function init() {
 		scale:true,
 		zIndex:0
 	});
-	
-	// $(document).foundation({
-	  // // specify the class used for active sections
-	  // active_class: 'active',
-	  // // how many pixels until the magellan bar sticks, 0 = auto
-	  // threshold: 0,
-	  // // pixels from the top of destination for it to be considered active
-	  // destination_threshold: 20,
-	  // // calculation throttling to increase framerate
-	  // throttle_delay: 50 
-	// });
 		
 	$(document).foundation({
 		orbit: {

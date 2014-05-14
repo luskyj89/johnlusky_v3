@@ -269,6 +269,7 @@ h3 {
 }
 
 [data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
+	position: relative;
     margin: 0 33px;
     
     &:first-child {
@@ -306,16 +307,17 @@ p {
 
 .sub-nav {
     width: 878px;
+    height: 190px;
     margin: 0 auto;
 }
 
-.link-sub-nav {
-    display: none;
+.sub-nav dd ul {
+	display: none;
     position: absolute;
-    top: 47px;
+    top: 37px;
     left: 50%;
-    width: 180px;
-    margin-left: 255px;
+    width: 150px;
+    margin-left: -68px;
     padding: 10px 20px;
     background: $black;
     border-bottom: 8px solid $blue-green;
@@ -325,10 +327,19 @@ p {
     a {
         display: block;
         font-family: $mohave;
-        font-size: 24px;
-        text-decoration: none;
-        line-height: 40px;
+        font-size: 20px;
+		text-decoration: none;
+		line-height: 23px!important;
     }
+	
+	li {
+		margin: 4px 9px;
+	}
+	
+}
+
+.sub-nav dd:hover > ul {
+	display: block;
 }
 
 .sub-nav dt, .sub-nav dd, .sub-nav li {
