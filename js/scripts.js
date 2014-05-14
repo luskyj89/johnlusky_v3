@@ -15,7 +15,7 @@ function resizer(e) {
 	var frameHeight = $(window).height();
 	var frameWidth = $(window).width();
 	
-	$("#hero").css('height', frameHeight);
+	$("#top").css('height', frameHeight);
 	$(".space").css('height', frameHeight);
 	$(".carbon").css('height', frameHeight);
 }
