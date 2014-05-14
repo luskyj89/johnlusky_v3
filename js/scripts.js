@@ -53,6 +53,38 @@ function init() {
 		e.preventDefault();
 	});
 	
+	$( ".hover-ghost" ).hover(
+	  function() {
+	    $( ".links-hover" ).fadeIn();
+	  }, function() {
+	    //$( ".links-hover" ).fadeOut();
+	  }
+	);
+	
+	$( ".links-hover" ).hover(
+	  function() {
+	    //$( ".links-hover" ).css('display', 'block');
+	  }, function() {
+	    $( ".links-hover" ).fadeOut();
+	  }
+	);
+	
+	$( ".links-hvr" ).hover(
+	  function() {
+	    $( ".link-sub-nav" ).fadeIn();
+	  }, function() {
+	    //$( ".links-hover" ).fadeOut();
+	  }
+	);
+	
+	$( ".link-sub-nav" ).hover(
+	  function() {
+	    //$( ".links-hover" ).css('display', 'block');
+	  }, function() {
+	    $( ".link-sub-nav" ).fadeOut();
+	  }
+	);
+	
 	$(window).stellar();
 	
 	$('.space').videoBG({

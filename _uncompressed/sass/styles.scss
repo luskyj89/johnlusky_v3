@@ -46,9 +46,9 @@ $blue-green: #1effc7;
     font-weight: normal;
     font-style: normal;
 }
-$mohave: 'mohaveregular';
-$mohaveBold: 'mohavebold';
-$mohaveSemi: 'mohavesemibold';
+$mohave: 'mohaveregular', arial, sans-serif;
+$mohaveBold: 'mohavebold', arial, sans-serif;
+$mohaveSemi: 'mohavesemibold', arial, sans-serif;
 
 ///// Other Vars
 
@@ -62,6 +62,12 @@ $mohaveSemi: 'mohavesemibold';
 @mixin relCenter() {
     position: relative;
     left: 50%;
+}
+
+@mixin borderBox() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -185,33 +191,68 @@ h3 {
     
   }
   
-  .topnav-links {
-    top: -124px;
-    //left: -259px;
-    left: -442px;
-    background: transparent url(../img/tri-btn-links.png) no-repeat;
-  }
+    .topnav-links {
+        top: -124px;
+        //left: -259px;
+        left: -442px;
+        background: transparent url(../img/tri-btn-links.png) no-repeat;
+        z-index: 100;
+    }
+    
+    .links-hover {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 182px;
+        height: 315px;
+        padding: 25px 0 0 25px;
+        background: black;
+        opacity: .85;
+        border-bottom: 8px solid $blue-green;
+        z-index: 120;
+        @include borderBox;
+    
+        a {
+            display: block;
+            font-family: $mohave;
+            font-size: 37px;
+            text-decoration: none;
+            line-height: 53px;
+        }
+        
+    }
+    
+    .hover-ghost {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 182px;
+        height: 315px;
+        background: transparent;
+        z-index: 110;
+    }
   
-  .topnav-contact {
-    bottom: -128px;
-    //right: -259px;
-    right: -442px;
-    background: transparent url(../img/tri-btn-contact.png) no-repeat;
-  }
-  
-  .topnav-about {
-    bottom: -128px;
-    //left: -259px;
-    left: -442px;
-    background: transparent url(../img/tri-btn-about.png) no-repeat;
-  }
-  
-  .topnav-work {
-    top: -124px;
-    //right: -259px;
-    right: -442px;
-    background: transparent url(../img/tri-btn-work.png) no-repeat;
-  }
+    .topnav-contact {
+        bottom: -128px;
+        //right: -259px;
+        right: -442px;
+        background: transparent url(../img/tri-btn-contact.png) no-repeat;
+    }
+
+    .topnav-about {
+        bottom: -128px;
+        //left: -259px;
+        left: -442px;
+        background: transparent url(../img/tri-btn-about.png) no-repeat;
+    }
+
+    .topnav-work {
+        top: -124px;
+        //right: -259px;
+        right: -442px;
+        background: transparent url(../img/tri-btn-work.png) no-repeat;
+    }
   
 }
 
@@ -266,6 +307,28 @@ p {
 .sub-nav {
     width: 878px;
     margin: 0 auto;
+}
+
+.link-sub-nav {
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    width: 180px;
+    margin-left: 255px;
+    padding: 10px 20px;
+    background: $black;
+    border-bottom: 8px solid $blue-green;
+    opacity: .85;
+    @include borderBox;
+    
+    a {
+        display: block;
+        font-family: $mohave;
+        font-size: 24px;
+        text-decoration: none;
+        line-height: 40px;
+    }
 }
 
 .sub-nav dt, .sub-nav dd, .sub-nav li {
