@@ -317,7 +317,7 @@ p {
 }
 
 .sub-nav dd ul {
-	display: none;
+	  display: none;
     position: absolute;
     top: 37px;
     left: 50%;
@@ -333,8 +333,8 @@ p {
         display: block;
         font-family: $mohave;
         font-size: 20px;
-		text-decoration: none;
-		line-height: 23px!important;
+		    text-decoration: none;
+	     	line-height: 23px!important;
     }
 	
 	li {
@@ -726,6 +726,24 @@ footer {
 		margin: 0 0 40px 0;
 	}
 	
+}
+
+@media only screen and (max-width: 730px) {
+    #top {
+        .logo {
+            width: 380px;
+            height: 279px;
+            margin-left: -190px;
+            background-size: 370px;
+        }
+        
+        .idd-hdr {
+            width: 320px;
+            height: 81px;
+            margin-left: -160px;
+            background-size: 340px;
+        }
+    }
 }
 
 @media only screen and (min-width: 40.063em) { 

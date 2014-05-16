@@ -18,10 +18,13 @@ function resizer(e) {
 	$("#top").css('height', frameHeight);
 	$(".space").css('height', frameHeight);
 	$(".carbon").css('height', frameHeight);
+	$(".videoBG, .videoBG_wrapper").css({
+		'width': frameWidth,
+		'height': frameHeight
+	});
 }
 
 // Animations 
-
 function rollInTopNav() {
 	$( ".topnav-links" ).animate({ left: "-259" }, 1000, "easeOutQuad");
 	$( ".topnav-about" ).delay(400).animate({ left: "-259" }, 1000, "easeOutQuad");
@@ -31,6 +34,18 @@ function rollInTopNav() {
 	$( ".logo" ).delay(1600).animate({ opacity: "1" }, 2000, "easeOutQuad");
 	$( ".idd-hdr" ).delay(1800).animate({ opacity: "1" }, 2000, "easeOutQuad");
 	$( ".explore" ).delay(2000).animate({ opacity: ".6" }, 2000, "easeOutQuad");	
+}
+
+// videoBG 
+function videoStarter() {
+	$('.space').videoBG({
+		mp4:'video/shutterstock_v2529842.mp4',
+		ogv:'video/shutterstock_v2529842.ogv',
+		webm:'video/shutterstock_v2529842.webm',
+		poster:'video/shutterstock_v2529842.jpg',
+		scale:true,
+		zIndex:0
+	});	
 }
 
 // Init
@@ -71,14 +86,7 @@ function init() {
 	
 	$(window).stellar();
 	
-	$('.space').videoBG({
-		mp4:'video/shutterstock_v2529842.mp4',
-		ogv:'video/shutterstock_v2529842.ogv',
-		webm:'video/shutterstock_v2529842.webm',
-		poster:'video/shutterstock_v2529842.jpg',
-		scale:true,
-		zIndex:0
-	});
+	videoStarter();
 		
 	$(document).foundation({
 		orbit: {

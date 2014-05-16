@@ -9558,8 +9558,24 @@ footer #footer .back-to-top:hover {
     margin: 0 0 40px 0;
   }
 }
+@media only screen and (max-width: 730px) {
+  /* line 733, ../_uncompressed/sass/styles.scss */
+  #top .logo {
+    width: 380px;
+    height: 279px;
+    margin-left: -190px;
+    background-size: 370px;
+  }
+  /* line 740, ../_uncompressed/sass/styles.scss */
+  #top .idd-hdr {
+    width: 320px;
+    height: 81px;
+    margin-left: -160px;
+    background-size: 340px;
+  }
+}
 @media only screen and (min-width: 40.063em) {
-  /* line 735, ../_uncompressed/sass/styles.scss */
+  /* line 753, ../_uncompressed/sass/styles.scss */
   #about-content1 #chart {
     left: 0;
     margin: 0 auto;
