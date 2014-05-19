@@ -9379,6 +9379,12 @@ p {
   font-size: 17px;
 }
 /* line 552, ../_uncompressed/sass/styles.scss */
+#contact fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* line 558, ../_uncompressed/sass/styles.scss */
 #contact input, #contact textarea {
   margin: 0 0 25px 0;
   padding: 20px 13px;
@@ -9390,24 +9396,30 @@ p {
   color: #1effc7;
   outline: none;
 }
-/* line 563, ../_uncompressed/sass/styles.scss */
+/* line 569, ../_uncompressed/sass/styles.scss */
 #contact input:focus, #contact textarea:focus {
   border: 8px solid rgba(30, 255, 199, 0.8);
   box-shadow: 0 0 35px rgba(30, 255, 199, 0.5);
 }
-/* line 570, ../_uncompressed/sass/styles.scss */
+/* line 576, ../_uncompressed/sass/styles.scss */
 #contact textarea {
   height: 200px;
   resize: none;
   font-size: 17px;
   font-family: arial, helvetica, sans-serif;
 }
-/* line 577, ../_uncompressed/sass/styles.scss */
-#contact input[type="submit"] {
+/* line 583, ../_uncompressed/sass/styles.scss */
+#contact .submit_btn {
   width: 200px;
   padding: 10px;
   font-size: 34px;
   color: #f0f1f1;
+  margin: 0 0 25px 0;
+  background-color: transparent;
+  border: 8px solid rgba(30, 255, 199, 0.2);
+  font-family: "mohavesemibold", arial, sans-serif;
+  font-weight: normal;
+  outline: none;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -9421,39 +9433,46 @@ p {
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 586, ../_uncompressed/sass/styles.scss */
-#contact input[type="submit"]:hover {
+/* line 598, ../_uncompressed/sass/styles.scss */
+#contact .submit_btn:hover {
   color: #1effc7;
   border: 8px solid rgba(30, 255, 199, 0.8);
   box-shadow: 0 0 35px rgba(30, 255, 199, 0.5);
 }
-/* line 594, ../_uncompressed/sass/styles.scss */
+/* line 606, ../_uncompressed/sass/styles.scss */
+#contact #result {
+  color: #f0f1f1;
+  font-weight: bold;
+  font-size: 19px;
+  margin: 0 0 40px 0px;
+}
+/* line 613, ../_uncompressed/sass/styles.scss */
 #contact ::-webkit-input-placeholder {
   color: #f0f1f1;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
-/* line 599, ../_uncompressed/sass/styles.scss */
+/* line 618, ../_uncompressed/sass/styles.scss */
 #contact ::-moz-placeholder {
   color: #f0f1f1;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
-/* line 604, ../_uncompressed/sass/styles.scss */
+/* line 623, ../_uncompressed/sass/styles.scss */
 #contact :-ms-input-placeholder {
   color: #f0f1f1;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 613, ../_uncompressed/sass/styles.scss */
+/* line 632, ../_uncompressed/sass/styles.scss */
 footer {
   min-height: 205px;
   border-top: 10px solid #1effc7;
   background: black;
   box-shadow: 0 0 135px rgba(30, 255, 199, 0.3);
 }
-/* line 621, ../_uncompressed/sass/styles.scss */
+/* line 640, ../_uncompressed/sass/styles.scss */
 footer #footer li {
   display: inline-block;
   padding: 0 10px 0 6px;
@@ -9461,16 +9480,16 @@ footer #footer li {
   border-right: 1px solid #f0f1f1;
   line-height: 11px;
 }
-/* line 628, ../_uncompressed/sass/styles.scss */
+/* line 647, ../_uncompressed/sass/styles.scss */
 footer #footer li:last-child {
   border-right: 0;
 }
-/* line 632, ../_uncompressed/sass/styles.scss */
+/* line 651, ../_uncompressed/sass/styles.scss */
 footer #footer li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 639, ../_uncompressed/sass/styles.scss */
+/* line 658, ../_uncompressed/sass/styles.scss */
 footer #footer .back-to-top {
   display: block;
   position: relative;
@@ -9497,25 +9516,25 @@ footer #footer .back-to-top {
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 656, ../_uncompressed/sass/styles.scss */
+/* line 675, ../_uncompressed/sass/styles.scss */
 footer #footer .back-to-top:hover {
   background-position: 0 -5px;
 }
 
 @media only screen and (max-height: 800px) {
-  /* line 672, ../_uncompressed/sass/styles.scss */
+  /* line 691, ../_uncompressed/sass/styles.scss */
   #top .explore {
     display: none;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 682, ../_uncompressed/sass/styles.scss */
+  /* line 701, ../_uncompressed/sass/styles.scss */
   .back-to-top {
     left: 20px;
     top: -30px;
   }
 
-  /* line 689, ../_uncompressed/sass/styles.scss */
+  /* line 708, ../_uncompressed/sass/styles.scss */
   #about-content1 img {
     width: 210px;
     position: relative;
@@ -9523,7 +9542,7 @@ footer #footer .back-to-top:hover {
     margin: 0 0 30px -105px;
   }
 
-  /* line 698, ../_uncompressed/sass/styles.scss */
+  /* line 717, ../_uncompressed/sass/styles.scss */
   #about h2 {
     left: 0;
     margin: 10px auto 0 auto;
@@ -9533,7 +9552,7 @@ footer #footer .back-to-top:hover {
     background-size: 500px;
   }
 
-  /* line 707, ../_uncompressed/sass/styles.scss */
+  /* line 726, ../_uncompressed/sass/styles.scss */
   #work h2 {
     left: 0;
     margin: 10px auto 0 auto;
@@ -9543,7 +9562,7 @@ footer #footer .back-to-top:hover {
     background-size: 500px;
   }
 
-  /* line 716, ../_uncompressed/sass/styles.scss */
+  /* line 735, ../_uncompressed/sass/styles.scss */
   #contact h2 {
     left: 0;
     margin: 10px auto 0 auto;
@@ -9553,20 +9572,20 @@ footer #footer .back-to-top:hover {
     background-size: 500px;
   }
 
-  /* line 725, ../_uncompressed/sass/styles.scss */
+  /* line 744, ../_uncompressed/sass/styles.scss */
   #contact p {
     margin: 0 0 40px 0;
   }
 }
 @media only screen and (max-width: 730px) {
-  /* line 733, ../_uncompressed/sass/styles.scss */
+  /* line 752, ../_uncompressed/sass/styles.scss */
   #top .logo {
     width: 380px;
     height: 279px;
     margin-left: -190px;
     background-size: 370px;
   }
-  /* line 740, ../_uncompressed/sass/styles.scss */
+  /* line 759, ../_uncompressed/sass/styles.scss */
   #top .idd-hdr {
     width: 320px;
     height: 81px;
@@ -9575,7 +9594,7 @@ footer #footer .back-to-top:hover {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 753, ../_uncompressed/sass/styles.scss */
+  /* line 772, ../_uncompressed/sass/styles.scss */
   #about-content1 #chart {
     left: 0;
     margin: 0 auto;

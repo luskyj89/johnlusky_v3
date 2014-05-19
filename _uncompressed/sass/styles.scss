@@ -548,6 +548,12 @@ p {
 		margin: -35px 0 40px 0;
 		font-size: 17px;
 	}
+	
+	fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
 
 	input, textarea {
 		margin: 0 0 25px 0;
@@ -574,11 +580,17 @@ p {
 		font-family: arial, helvetica, sans-serif;
 	}
 	
-	input[type="submit"] {
+	.submit_btn {
 		width: 200px;
 		padding: 10px;
 		font-size: 34px;
 		color: $white;
+		margin: 0 0 25px 0;
+		background-color: transparent;
+		border: 8px solid rgba(30, 255, 199, .2);
+		font-family: $mohaveSemi;
+		font-weight: normal;
+		outline: none;
 		@include transition-property(all);
 		@include transition-duration(.3s);
 		@include transition-timing-function(ease-out);
@@ -589,6 +601,13 @@ p {
 			box-shadow: 0 0 35px rgba(30, 255, 199, .50);
 		}
 		
+	}
+	
+	#result {
+		color: $white;
+		font-weight: bold;
+		font-size: 19px;
+		margin: 0 0 40px 0px;
 	}
 	
 	::-webkit-input-placeholder {

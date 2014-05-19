@@ -4,6 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Lusky | Interactive Developer and Designer</title>
+    
+    <!-- Standard Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57x57-precomposed.png">
+	
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -117,13 +131,13 @@
 				<p>I’m currently accepting new freelance clients of all shapes and sizes. I’m available for both design and development of 
 				websites, email campaigns, applications, and more.</p>
 
-				<p>If you’re interested in getting kickass work for a reasonable price, <a href="#contact">get in touch</a> now.</p>
+				<p>If you’re interested in getting great work for a reasonable price, <a href="#contact">get in touch</a> now.</p>
 				
 				<hr>
 				
 				<p>If you’d like a more comprehensive rundown
 				of my skills and work experience, you can
-				<a href="#">download my resume</a>.</p>
+				<a href="files/lusky-resume_webinfo.pdf">download my resume</a>.</p>
 			</div>
 		</div>
 		
@@ -269,21 +283,22 @@
 			</div>
 		</div>
 		
-		<form>
-			<div class="row" id="contact" data-magellan-destination="contact">	
-				<div class="large-7 columns">
-					<h2>Contact</h2>
-					<p>If you're interested in working with me, don't hesitate to reach out. For freelance projects, I'm available for any size of project. I'm open to anything from total rebrand and site designs/builds to email blasts.</p>
-					<input type="text" placeholder="Name" />
-					<input type="text" placeholder="Email" />
-					<textarea placeholder=""></textarea>
-					<input type="submit" value="Send"/>
-				</div>
-				<div class="large-5 columns show-for-large-up">
-					<img src="img/bg-contact.png" />
-				</div>
+		<div class="row" id="contact" data-magellan-destination="contact">	
+			<div class="large-7 columns">
+				<h2>Contact</h2>
+				<p>If you're interested in working with me, don't hesitate to reach out. I'm available for freelance projects of (nearly) any size, from total redesigns to email campaigns.</p>
+				<fieldset id="contact_form">
+					<div id="result"></div>
+					<input type="text" name="name" id="name" placeholder="Name" />
+					<input type="email" name="email" id="email" placeholder="Email" />
+					<textarea name="message" id="message" placeholder="Message"></textarea>
+					<button class="submit_btn" id="submit_btn">Send</button>
+				</fieldset>
 			</div>
-		</form>
+			<div class="large-5 columns show-for-large-up">
+				<img src="img/bg-contact.png" />
+			</div>
+		</div>
     	
     </section>
     
