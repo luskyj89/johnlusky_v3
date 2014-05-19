@@ -556,8 +556,9 @@ p {
 	}
 
 	input, textarea {
+		height: 60px;
+		padding: 0px 12px;
 		margin: 0 0 25px 0;
-		padding: 20px 13px;
 		background-color: transparent;
 		border: 8px solid rgba(30, 255, 199, .2);
 		font-family: $mohaveSemi;
@@ -575,6 +576,7 @@ p {
 	
 	textarea {
 		height: 200px;
+		padding: 15px 12px;
 		resize: none;
 		font-size: 17px;
 		font-family: arial, helvetica, sans-serif;
@@ -604,6 +606,7 @@ p {
 	}
 	
 	#result {
+		display: none;
 		color: $white;
 		font-weight: bold;
 		font-size: 19px;
@@ -623,6 +626,7 @@ p {
 	:-ms-input-placeholder {
 		color: $white;
 		font-weight: normal;
+		font-family: arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 	}
 	

@@ -287,8 +287,8 @@
 				<p>If you're interested in working with me, don't hesitate to reach out. I'm available for freelance projects of (nearly) any size, from total redesigns to email campaigns.</p>
 				<fieldset id="contact_form">
 					<div id="result"></div>
-					<input type="text" name="name" id="name" placeholder="Name" />
-					<input type="email" name="email" id="email" placeholder="Email" />
+					<input type="text" name="name" id="name" value="Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+					<input type="email" name="email" id="email" value="Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
 					<textarea name="message" id="message" placeholder="Message"></textarea>
 					<button class="submit_btn" id="submit_btn">Send</button>
 				</fieldset>
