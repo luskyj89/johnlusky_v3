@@ -22,6 +22,12 @@ function resizer(e) {
 		'width': frameWidth,
 		'height': frameHeight
 	});
+	
+	if (frameWidth < 626) {
+		var anchorOffset = 50;	
+	} else {
+		var anchorOffset = 0;
+	}
 }
 
 // Animations 
@@ -108,6 +114,12 @@ function init() {
 };
 
 $(document).ready(function() {
+
+	if (frameWidth < 626) {
+		var anchorOffset = 50;	
+	} else {
+		var anchorOffset = 0;
+	}
 	
 	init();
 	
@@ -136,7 +148,7 @@ $(document).ready(function() {
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	    if (target.length) {
 	      $('html,body').animate({
-	        scrollTop: target.offset().top
+	        scrollTop: target.offset().top - anchorOffset
 	      }, 1000, "easeOutQuad");
 	      return false;
 	    }
