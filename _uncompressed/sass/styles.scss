@@ -97,7 +97,7 @@ a {
     color: $blue-green;
     font-weight: bold;
     text-decoration: underline;
-    
+
     &:hover {
         color: $white;
     }
@@ -140,7 +140,7 @@ h3 {
   width: 100%;
   z-index: 1000;
   overflow: hidden;
-  
+
   .logo {
     @include relCenter;
     top: 0;
@@ -151,7 +151,7 @@ h3 {
     text-indent: -9999px;
     opacity: 0;
   }
-  
+
   .idd-hdr {
     @include relCenter;
     top: -50px;
@@ -162,7 +162,7 @@ h3 {
     text-indent: -9999px;
     opacity: 0;
   }
-  
+
   .explore {
     @include absoCenter;
     bottom: 50px;
@@ -174,7 +174,7 @@ h3 {
     text-indent: -9999px;
     opacity: 0;
   }
-  
+
   .tri-btn {
     display: block;
     position: absolute;
@@ -185,13 +185,13 @@ h3 {
     @include transition-property(all);
     @include transition-duration(.7s);
     @include transition-timing-function(ease-out);
-    
+
     &:hover {
-      opacity: 1;  
+      opacity: 1;
     }
-    
+
   }
-  
+
     .topnav-links {
         top: -124px;
         //left: -259px;
@@ -199,7 +199,7 @@ h3 {
         background: transparent url(../img/tri-btn-links.png) no-repeat;
         z-index: 100;
     }
-    
+
     .links-hover {
         display: none;
         position: absolute;
@@ -213,7 +213,7 @@ h3 {
         border-bottom: 8px solid $blue-green;
         z-index: 120;
         @include borderBox;
-    
+
         a {
             display: block;
             font-family: $mohave;
@@ -221,9 +221,9 @@ h3 {
             text-decoration: none;
             line-height: 53px;
         }
-        
+
     }
-    
+
     .hover-ghost {
         position: absolute;
         top: 0;
@@ -233,7 +233,7 @@ h3 {
         background: transparent;
         z-index: 110;
     }
-  
+
     .topnav-contact {
         bottom: -128px;
         //right: -259px;
@@ -254,7 +254,7 @@ h3 {
         right: -442px;
         background: transparent url(../img/tri-btn-work.png) no-repeat;
     }
-  
+
 }
 
 
@@ -272,7 +272,7 @@ h3 {
 [data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
 	position: relative;
     margin: 0 33px;
-    
+
     &:first-child {
       margin: 0 33px 0 60px;
     }
@@ -284,11 +284,11 @@ h3 {
 
 .orbit-container .orbit-prev, .orbit-container .orbit-next {
     background-color: rgba(0, 0, 0, 0.3);
-    
+
     &:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
-    
+
 }
 
 .orbit-container .orbit-slides-container img {
@@ -328,7 +328,7 @@ p {
     border-bottom: 8px solid $blue-green;
     opacity: .85;
     @include borderBox;
-    
+
     a {
         display: block;
         font-family: $mohave;
@@ -336,11 +336,11 @@ p {
 		    text-decoration: none;
 	     	line-height: 23px!important;
     }
-	
+
 	li {
 		margin: 4px 9px;
 	}
-	
+
 }
 
 .sub-nav dd:hover > ul {
@@ -349,9 +349,9 @@ p {
 
 .sub-nav dt, .sub-nav dd, .sub-nav li {
 	 font-family: $mohaveSemi;
-	
+
 	&.active {
-		
+
 		a {
 			border-radius: 0;
 			font-family: $mohaveBold;
@@ -360,23 +360,23 @@ p {
 			padding: 0.1875rem 1rem;
 			cursor: default;
 			color: $blue-green;
-			
+
 			&:hover {
 				background: transparent;
-			}	
+			}
 		}
 	}
-	
+
 	a {
 		font-size: 23px;
 		font-weight: normal;
 		color: $white;
-		
+
 		&:hover {
-			color: $blue-green;	
+			color: $blue-green;
 		}
-		
-	}  
+
+	}
 }
 
 .nav-logo {
@@ -388,7 +388,7 @@ p {
     height: 136px;
     background: transparent url(../img/gfx-logo-small.png) no-repeat !important;
     text-indent: -9999px;
-  
+
     &:hover {
       opacity: .7;
     }
@@ -400,36 +400,36 @@ p {
 	background: $black;
 	border-bottom: 4px solid $blue-green;
 	//min-height: 60px;
-	
+
 	a {
 		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 11px;
 	}
-	
+
 	.top-bar-section ul li > a {
 		background: $black;
-		
+
 		&:hover {
 			background: #141414;
 		}
-		
+
 	}
-	
+
 	.top-bar-section .dropdown label {
 		padding: 2px 15px 2px;
 		color: $black;
 	}
-	
+
 	.top-bar-section .dropdown li label {
 		background: $blue-green;
 	}
-	
+
 	.top-bar-section ul {
 		background: $black;
 		font-size: 12px;
 	}
-	
+
 }
 
 .top-bar.expanded .title-area {
@@ -439,7 +439,7 @@ p {
 @media only screen and (min-width: 40.063em) {
 	.top-bar-section ul {
 		border-bottom: 4px solid $blue-green;
-	}	
+	}
 
 	.top-bar-section li:not(.has-form) a:not(.button) {
 		line-height: 41px;
@@ -460,7 +460,7 @@ p {
 /// About
 
 #about {
-	
+
 	h2 {
 		position: relative;
 		left: -65px;
@@ -471,12 +471,12 @@ p {
 		background-position: 0 -152px;
 		text-indent: -9999px;
 	}
-	
+
 }
 
 #about-content1 {
     position: relative;
-      
+
     #chart {
         //display: none;
         position: relative;
@@ -487,7 +487,7 @@ p {
         background: transparent url(../img/gfx-chart.png) no-repeat;
         z-index: 10;
     }
-    
+
     .bg-triangle {
         position: absolute;
         top: -180px;
@@ -498,14 +498,14 @@ p {
         opacity: 0;
         z-index: 9;
     }
-  
+
 }
 
 
 /// Work
 
 #work {
-	
+
     h2 {
         position: relative;
         left: -65px;
@@ -516,23 +516,32 @@ p {
         background-position: 0 -558px;
         text-indent: -9999px;
     }
-  
+
+    p {
+        position: relative;
+        top: -27px;
+
+        @media all and (max-width: 641px){
+            top: 0;
+        }
+    }
+
 }
 
 .work-content {
     margin-bottom: 100px;
-    
+
     a {
         font-family: $mohaveBold;
         font-size: 20px;
     }
-    
+
 }
 
 /// Contact
 
-#contact {  
-  
+#contact {
+
 	h2 {
 		position: relative;
 		left: -65px;
@@ -543,12 +552,12 @@ p {
 		background-position: 0 -353px;
 		text-indent: -9999px;
 	}
-	
+
 	p {
 		margin: -35px 0 40px 0;
 		font-size: 17px;
 	}
-	
+
 	fieldset {
 		border: 0;
 		margin: 0;
@@ -566,14 +575,14 @@ p {
 		font-size: 22px;
 		color: $blue-green;
 		outline: none;
-		
+
 		&:focus {
 			border: 8px solid rgba(30, 255, 199, .8);
 			box-shadow: 0 0 35px rgba(30, 255, 199, .50);
 		}
-		
+
 	}
-	
+
 	textarea {
 		height: 200px;
 		padding: 15px 12px;
@@ -581,7 +590,7 @@ p {
 		font-size: 17px;
 		font-family: arial, helvetica, sans-serif;
 	}
-	
+
 	.submit_btn {
 		width: 200px;
 		padding: 10px;
@@ -602,9 +611,9 @@ p {
 			border: 8px solid rgba(30, 255, 199, .8);
 			box-shadow: 0 0 35px rgba(30, 255, 199, .50);
 		}
-		
+
 	}
-	
+
 	#result {
 		display: none;
 		color: $white;
@@ -612,13 +621,13 @@ p {
 		font-size: 19px;
 		margin: 0 0 40px 0px;
 	}
-	
+
 	::-webkit-input-placeholder {
 		color: $white;
 		font-weight: normal;
 		-webkit-font-smoothing: antialiased;
 	}
-	::-moz-placeholder { 
+	::-moz-placeholder {
 		color: $white;
 		font-weight: normal;
 		-webkit-font-smoothing: antialiased;
@@ -629,8 +638,8 @@ p {
 		font-family: arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 	}
-	
-		
+
+
 }
 
 footer {
@@ -638,27 +647,27 @@ footer {
 	border-top: 10px solid $blue-green;
 	background: $black;
 	box-shadow: 0 0 135px rgba(30, 255, 199, 0.3);
-	
+
 	#footer {
-		
+
 		li {
 			display: inline-block;
 			padding: 0 10px 0 6px;
 			font-size: 11px;
 			border-right: 1px solid $white;
 			line-height: 11px;
-			
+
 			&:last-child {
 				border-right: 0;
 			}
-			
+
 			a {
 				text-decoration: none;
 				text-transform: uppercase;
 			}
-			
+
 		}
-		
+
 		.back-to-top {
 			display: block;
 			position: relative;
@@ -675,49 +684,49 @@ footer {
 			@include transition-property(all);
 			@include transition-duration(.3s);
 			@include transition-timing-function(ease-out);
-			
+
 			&:hover {
 				background-position: 0 -5px;
 			}
-				
+
 		}
-		
+
 	}
-	
+
 }
 
 ///// Media Queries
 
-@media only screen and (max-height: 800px) { 
-  
+@media only screen and (max-height: 800px) {
+
   #top {
-    
+
     .explore {
       display: none;
     }
-    
+
   }
-    
+
 }
 
-@media only screen and (max-width: 40em) { 
-	
+@media only screen and (max-width: 40em) {
+
 	.back-to-top {
 		left: 20px;
 		top: -30px;
 	}
-	
+
 	#about-content1 {
-	
+
 		img {
 			width: 210px;
 			position: relative;
 			left: 50%;
 			margin: 0 0 30px -105px;
 		}
-	
+
 	}
-	
+
 	#about h2 {
 		left: 0;
 		margin: 10px auto 0 auto;
@@ -726,7 +735,7 @@ footer {
 		background-position: 0 -137px;
 		background-size: 500px;
 	}
-	
+
 	#work h2 {
 		left: 0;
 		margin: 10px auto 0 auto;
@@ -735,7 +744,7 @@ footer {
 		background-position: 0 -404px;
 		background-size: 500px;
 	}
-	
+
 	#contact h2 {
 		left: 0;
 		margin: 10px auto 0 auto;
@@ -744,11 +753,11 @@ footer {
 		background-position: -33px -265px;
 		background-size: 500px;
 	}
-	
+
 	#contact p {
 		margin: 0 0 40px 0;
 	}
-	
+
 }
 
 @media only screen and (max-width: 730px) {
@@ -759,7 +768,7 @@ footer {
             margin-left: -190px;
             background-size: 370px;
         }
-        
+
         .idd-hdr {
             width: 320px;
             height: 81px;
@@ -769,8 +778,8 @@ footer {
     }
 }
 
-@media only screen and (min-width: 40.063em) { 
-	
+@media only screen and (min-width: 40.063em) {
+
 	#about-content1 {
 
 		#chart {
@@ -780,23 +789,3 @@ footer {
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
