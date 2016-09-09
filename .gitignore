@@ -1,2 +1,1 @@
-
-*.scssc
+_tools/node_modules/*

@@ -217,71 +217,6 @@
 			</div>
 		</div>
 
-		<!-- <div class="row work-content" id="hfc">
-			<div class="large-4 columns hide-for-large-up">
-				<h3>Hope for the Children - Design/Build</h3>
-
-				<hr>
-
-				<p>I did a full rebranding, site design, and build for Hope for the Children. They’re a non-profit organization that takes care of orphans in India. This was a static HTML build.</p>
-
-				<p><a href="http://hfclove.org" target="_blank" title="Hope for the Children">VISIT LIVE SITE</a></p>
-			</div>
-			<div class="large-8 columns">
-
-				<ul class="work-orbit" data-orbit>
-					<li>
-						<img src="img/screens-hfc2.jpg" alt="HFC slide 1" />
-					</li>
-					<li class="active">
-						<img src="img/screens-hfc1.jpg" alt="HFC slide 2" />
-					</li>
-					<li>
-						<img src="img/screens-hfc3.jpg" alt="HFC slide 3" />
-					</li>
-				</ul>
-
-			</div>
-			<div class="large-4 columns show-for-large-up">
-				<h3>Hope for the Children - Design/Build</h3>
-
-				<hr>
-
-				<p>I did a full rebranding, site design, and build for Hope for the Children. They’re a non-profit organization that takes care of orphans in India. This was a static HTML build.</p>
-
-				<p><a href="http://hfclove.org" target="_blank" title="Hope for the Children">VISIT LIVE SITE</a></p>
-			</div>
-		</div>
-
-		<div class="row work-content" id="xback-store">
-			<div class="large-4 columns">
-				<h3>Commonwealth Orthopaedic - Design/Build</h3>
-
-				<hr>
-
-				<p>Commonwealth Orthopaedic Associates serves Berks County and it's surrounding areas as a multi-disciplinary practice. This was a full site design and rebuild with another Wordpress CMS.</p>
-
-				<p>There's currently no link to the site because it's still under development.</p>
-
-			</div>
-
-			<div class="large-8 columns">
-
-				<ul class="work-orbit" data-orbit>
-					<li>
-						<img src="img/screens-coa2.jpg" alt="COA slide 1" />
-					</li>
-					<li class="active">
-						<img src="img/screens-coa1.jpg" alt="COA slide 2" />
-					</li>
-					<li>
-						<img src="img/screens-coa3.jpg" alt="COA slide 3" />
-					</li>
-				</ul>
-
-			</div>
-		</div> -->
-
 		<div class="row" id="contact" data-magellan-destination="contact">
 			<div class="large-7 columns">
 				<h2>Contact</h2>
@@ -325,7 +260,7 @@
     <script src="js/foundation/foundation.magellan.js"></script>
 
     <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
 
   </body>
 </html>
