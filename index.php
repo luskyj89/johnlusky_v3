@@ -18,6 +18,8 @@
 	<!-- For iPhone: -->
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57x57-precomposed.png">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -29,20 +31,7 @@
 
     		<h1 class="logo">John Lusky</h1>
 
-    		<h2 class="idd-hdr">Interactive Developer/Designer. What can I do for you?</h2>
-
-    		<a class="tri-btn topnav-links smooth show-for-large-up" href="#">Links</a>
-
-    		<div class="links-hover">
-    			<a href="files/lusky-resume_webinfo.pdf" target="_blank" title="Resume">Resume</a>
-    			<a href="https://www.linkedin.com/pub/john-lusky/46/780/a79" target="_blank" title="LinkedIn">LinkedIn</a>
-    			<a href="https://twitter.com/lusky_xx89" target="_blank" title="Twitter">Twitter</a>
-    		</div>
-    		<div class="hover-ghost show-for-large-up"></div>
-
-    		<a class="tri-btn topnav-work smooth show-for-large-up" href="#work">Work</a>
-    		<a class="tri-btn topnav-about smooth show-for-large-up" href="#about">About</a>
-    		<a class="tri-btn topnav-contact smooth show-for-large-up" href="#contact">Contact</a>
+    		<h2 class="idd-hdr">Developer / Designer</h2>
 
     		<a class="explore smooth" href="#about">Explore</a>
 
@@ -51,6 +40,7 @@
     	<!--<div class="space" data-stellar-background-ratio=".5"></div>-->
 
     	<div class="space show-for-medium-up"></div>
+        <div class="solid-black show-for-medium-up"></div>
 
     	<div data-magellan-expedition="fixed" id="sticky-nav" class="nav-controller show-for-large-up">
 		  	<dl class="sub-nav">
@@ -255,7 +245,8 @@
     </footer>
 
 
-    <script src="js/vendor/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
 

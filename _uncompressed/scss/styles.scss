@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: $mohaveSemi;
+    font-family: $robotoBold;
 }
 
 #wrapper {
@@ -61,15 +61,47 @@ h3 {
 	width: 100%;
 	background-size: cover;
 	background-attachment: fixed;
-	opacity: .2;
 	z-index: 999;
+    opacity: .2;
+    animation-name: lightsdown;
+    animation-duration: 5s;
+    animation-play-state: running;
 }
+
+@keyframes lightsdown {
+    0% {
+        opacity: .9;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+.solid-black {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+    height: 100vh;
+	background: $black;
+	z-index: 998;
+}
+
 
 .carbon {
 	position: relative;
 	width: 100%;
 	background: $black url(../img/bg-main.png) repeat;
 	z-index: 998;
+}
+
+.fade-off {
+    opacity: 0!important;
+}
+
+.fade-on {
+    opacity: 1!important;
 }
 
 #top {
@@ -79,30 +111,39 @@ h3 {
   overflow: hidden;
 
   .logo {
-    @include relCenter;
-    top: 0;
-    width: 556px;
+    position: fixed;
+    left: 50%;
+    top: 23px;
+    width: 796px;
     height: 419px;
-    margin-left: -258px;
-    background: transparent url(../img/gfx-toplogo.png) no-repeat;
+    margin-left: -402px;
+    background: transparent url(../img/gfx-logo-2016.png) no-repeat;
+    background-size: 100%;
     text-indent: -9999px;
     opacity: 0;
+    transition: opacity 1s ease-out;
   }
 
-  .idd-hdr {
-    @include relCenter;
-    top: -50px;
-    width: 695px;
-    height: 151px;
-    margin-left: -352px;
-    background: transparent url(../img/sprite-headers.png) no-repeat;
-    text-indent: -9999px;
-    opacity: 0;
-  }
+    .idd-hdr {
+        position: fixed;
+        left: 0;
+        top: 440px;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 8px;
+        color: $white;
+        background: rgba(0, 0, 0, 0.69);
+        opacity: 0;
+        transition: opacity 1s ease-out;
+    }
 
   .explore {
-    @include absoCenter;
-    bottom: 50px;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
     display: block;
     width: 143px;
     height: 137px;
@@ -133,61 +174,6 @@ h3 {
         left: -442px;
         background: transparent url(../img/tri-btn-links.png) no-repeat;
         z-index: 100;
-    }
-
-    .links-hover {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 182px;
-        height: 315px;
-        padding: 25px 0 0 25px;
-        background: black;
-        opacity: .85;
-        border-bottom: 8px solid $blue-green;
-        z-index: 120;
-        @include borderBox;
-
-        a {
-            display: block;
-            font-family: $mohave;
-            font-size: 37px;
-            text-decoration: none;
-            line-height: 53px;
-        }
-
-    }
-
-    .hover-ghost {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 182px;
-        height: 315px;
-        background: transparent;
-        z-index: 110;
-    }
-
-    .topnav-contact {
-        bottom: -128px;
-        //right: -259px;
-        right: -442px;
-        background: transparent url(../img/tri-btn-contact.png) no-repeat;
-    }
-
-    .topnav-about {
-        bottom: -128px;
-        //left: -259px;
-        left: -442px;
-        background: transparent url(../img/tri-btn-about.png) no-repeat;
-    }
-
-    .topnav-work {
-        top: -124px;
-        //right: -259px;
-        right: -442px;
-        background: transparent url(../img/tri-btn-work.png) no-repeat;
     }
 
 }
