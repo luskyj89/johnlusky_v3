@@ -5818,16 +5818,16 @@ h3 {
   background-size: cover;
   background-attachment: fixed;
   z-index: 999;
-  opacity: .2;
+  opacity: .3;
   animation-name: lightsdown;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-play-state: running; }
 
 @keyframes lightsdown {
   0% {
     opacity: .9; }
   100% {
-    opacity: .2; } }
+    opacity: .3; } }
 
 .solid-black {
   position: absolute;
@@ -5869,46 +5869,40 @@ h3 {
     transition: opacity 1s ease-out; }
   #top .idd-hdr {
     position: fixed;
-    left: 0;
-    top: 440px;
-    width: 100%;
-    padding: 10px;
+    left: 50%;
+    top: 400px;
+    width: 520px;
+    margin-left: -260px;
+    padding: 30px;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 8px;
     color: #f0f1f1;
-    background: rgba(0, 0, 0, 0.69);
+    background: rgba(0, 0, 0, 0.9);
     opacity: 0;
-    transition: opacity 1s ease-out; }
-  #top .explore {
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    display: block;
-    width: 143px;
-    height: 137px;
-    margin-left: -71px;
-    background: transparent url(../img/gfx-explore.png) no-repeat;
-    text-indent: -9999px;
-    opacity: 0; }
-  #top .tri-btn {
-    display: block;
-    position: absolute;
-    width: 519px;
-    height: 506px;
-    text-indent: -9999px;
-    opacity: .5;
-    transition: all .7s ease-out; }
-    #top .tri-btn:hover {
-      opacity: 1; }
-  #top .topnav-links {
-    top: -124px;
-    left: -442px;
-    background: transparent url(../img/tri-btn-links.png) no-repeat;
-    z-index: 100; }
+    transition: opacity 1s ease-out;
+    transition-delay: .5s; }
 
-[data-magellan-expedition], [data-magellan-expedition-clone] {
+.explore {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  display: block;
+  width: 102px;
+  height: 106px;
+  margin-left: -51px;
+  background: transparent url(../img/gfx-explore.png) no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+  opacity: 0;
+  transition: opacity .5s ease-out; }
+  .explore.active {
+    opacity: 1 !important; }
+  .explore.entered {
+    opacity: .6; }
+
+@keyframes explorein {}[data-magellan-expedition], [data-magellan-expedition-clone] {
   height: 113px;
   background: transparent url(../img/bg-gradient.png) repeat-x;
   z-index: 50;
@@ -6202,10 +6196,6 @@ footer {
     transition: all .3s ease-out; }
     footer #footer .back-to-top:hover {
       background-position: 0 -5px; }
-
-@media only screen and (max-height: 800px) {
-  #top .explore {
-    display: none; } }
 
 @media only screen and (max-width: 40em) {
   .back-to-top {

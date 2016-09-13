@@ -35,16 +35,17 @@ function rollInTopNav() {
 	$( ".topnav-work" ).delay(200).animate({ right: "-259" }, 1000, "easeOutQuad");
 	$( ".topnav-contact" ).delay(600).animate({ right: "-259" }, 1000, "easeOutQuad");
 
-	$( ".logo" ).delay(1600).animate({ opacity: "1" }, 2000, "easeOutQuad");
+	$( ".logo" ).animate({ opacity: "1" }, 5000, "easeOutQuad");
 	$( ".idd-hdr" ).delay(1800).animate({ opacity: "1" }, 2000, "easeOutQuad");
-	$( ".explore" ).delay(2000).animate({ opacity: ".6" }, 2000, "easeOutQuad");
+
+	$(".explore").addClass("entered");
 }
 
 // videoBG
 function videoStarter() {
 
 	$('.space').vide({
-		mp4:'video/space-planet.mp4',
+		mp4:'video/space-planet-with-reverse.mp4',
 	//	ogv:'video/shutterstock_v2529842.ogv',
 	//	webm:'video/shutterstock_v2529842.webm',
 		poster:'img/space-poster.jpg',
@@ -65,31 +66,15 @@ function init() {
 
 	$( ".explore" ).hover(
 	  function() {
-	    $( ".explore" ).animate({ opacity: "1" }, 700, "easeOutQuad");
+		$(".explore").addClass("active");
 	  }, function() {
-	    $( ".explore" ).animate({ opacity: ".6" }, 700, "easeOutQuad");
+		$(".explore").removeClass("active");
 	  }
 	);
 
 	$(".links-hvr, .topnav-links").click(function(e) {
 		e.preventDefault();
 	});
-
-	$( ".hover-ghost" ).hover(
-	  function() {
-	    $( ".links-hover" ).fadeIn();
-	  }, function() {
-	    //$( ".links-hover" ).fadeOut();
-	  }
-	);
-
-	$( ".links-hover" ).hover(
-	  function() {
-	    //$( ".links-hover" ).css('display', 'block');
-	  }, function() {
-	    $( ".links-hover" ).fadeOut();
-	  }
-	);
 
 	$(window).stellar();
 
@@ -236,14 +221,14 @@ $(window).scroll( function() {
 	if ($(window).scrollTop() > frameHeight - 10) {
 		// Fires when scrolling down past initial frame height
 	}
-	else if ( $(window).scrollTop() < 200 ) {
+	else if ( $(window).scrollTop() < 100 ) {
 		logo.removeClass("fade-off");
 		logo.addClass("fade-on");
 
 		jobTitle.removeClass("fade-off");
 		jobTitle.addClass("fade-on");
 	}
-	else if ( $(window).scrollTop() > 200 ) {
+	else if ( $(window).scrollTop() > 100 ) {
 		logo.removeClass("fade-on");
 		logo.addClass("fade-off");
 
