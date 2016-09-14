@@ -25,13 +25,13 @@ h1, h2, h3 {
 }
 
 hr {
-    border: solid $blue-green;
+    border: solid $blue;
     border-width: 4px 0 0;
     margin: 1.25rem 0 1.1875rem;
 }
 
 a {
-    color: $blue-green;
+    color: $blue;
     font-weight: bold;
     text-decoration: underline;
 
@@ -42,15 +42,15 @@ a {
 
 h3 {
     font-size: 23px;
-    color: $blue-green;
+    color: $blue;
 }
 
 ::selection {
-	background: #18c99d;
+	background: $blue;
 }
 
 ::-moz-selection {
-	background: #18c99d;
+	background: $blue;
 }
 
 ///// Section Specific Styles
@@ -171,6 +171,41 @@ h3 {
 
 }
 
+#hud {
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+    width: 400px;
+    margin-left: -200px;
+    padding: 25px 20px;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    cursor: crosshair;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hud-btn {
+        display: inline-block;
+        margin: 0 10px;
+        font-family: $robotoBold;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 5px;
+        color: $lightBlue;
+        cursor: crosshair;
+
+        &:hover {
+            color: $lightPurple;
+            text-shadow: $white 0 0px 19px;
+        }
+    }
+}
+
 
 // Foundation Overrides
 
@@ -180,7 +215,7 @@ h3 {
   	z-index: 50;
   	min-width: 100%;
   	padding: 10px;
-  	border-bottom: 4px solid $blue-green;
+  	border-bottom: 4px solid $blue;
 }
 
 [data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {

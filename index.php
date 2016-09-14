@@ -33,13 +33,19 @@
 
     		<h2 class="idd-hdr">Developer / Designer</h2>
 
-    		<a class="explore smooth" href="#about">Explore</a>
+    		<!-- <a class="explore smooth" href="#about">Explore</a> -->
+
+            <div id="hud">
+                <a id="hud-work" class="hud-btn" href="#" title="Work">Work</a>
+                <a id="hud-about" class="hud-btn" href="#" title="About">About</a>
+                <a id="hud-contact" class="hud-btn" href="#" title="Contact">Contact</a>
+            </div>
 
     	</section>
 
     	<!--<div class="space" data-stellar-background-ratio=".5"></div>-->
 
-    	<div class="space show-for-medium-up"></div>
+    	<div id="space-video" class="space show-for-medium-up"></div>
         <div class="solid-black show-for-medium-up"></div>
 
     	<div data-magellan-expedition="fixed" id="sticky-nav" class="nav-controller show-for-large-up">

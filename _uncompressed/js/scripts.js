@@ -10,7 +10,9 @@ var workMn 			= $("#work-mn");
 var contactMn 		= $("#contact-mn");
 var logo			= $(".logo");
 var jobTitle		= $(".idd-hdr");
+var hud				= $("#hud");
 
+var spaceVideo;
 
 // Resizer
 function resizer(e) {
@@ -41,10 +43,10 @@ function rollInTopNav() {
 	$(".explore").addClass("entered");
 }
 
-// videoBG
+// Video BG and HUD Control
 function videoStarter() {
 
-	$('.space').vide({
+	$('#space-video').vide({
 		mp4:'video/space-planet-with-reverse.mp4',
 	//	ogv:'video/shutterstock_v2529842.ogv',
 	//	webm:'video/shutterstock_v2529842.webm',
@@ -53,28 +55,42 @@ function videoStarter() {
 		loop: true,
 		muted: true,
 		autoplay: true,
-		posterType: "jpg"
+		posterType: "jpg",
+		className: "space-video"
 		});
+
+	// Get instance of the plugin
+	var spaceVideo = $('#space-video').data('vide');
+	var spaceVideoObject = spaceVideo.getVideoObject();
+
+	hud.mousemove(function( event ) {
+
+		var pageCoords = "( " + event.pageX + ", " + event.pageY + " )";
+		var hudPosition = hud.position();
+
+		// Find the position of the cursor inside the "HUD" relative to the width of the window
+		// Divide by 4 and round up to get a clean percentage
+		var innerHudPosition = Math.round( ( event.pageX - hudPosition.left + 200 ) / 4 );
+
+		console.log("Camera Position: " + innerHudPosition + "%");
+		console.log("Video Time: " + spaceVideoObject.currentTime );
+
+		// Set the video frame position relative to innerHudPosition
+		spaceVideoObject.currentTime = innerHudPosition / 2;
+		spaceVideoObject.pause();
+
+	});
+
+	hud.mouseout(function() {
+		spaceVideoObject.play();
+	});
 }
+
 // Init
 function init() {
+
 	resizer();
-
 	rollInTopNav();
-
-	console.log(frameHeight);
-
-	$( ".explore" ).hover(
-	  function() {
-		$(".explore").addClass("active");
-	  }, function() {
-		$(".explore").removeClass("active");
-	  }
-	);
-
-	$(".links-hvr, .topnav-links").click(function(e) {
-		e.preventDefault();
-	});
 
 	$(window).stellar();
 
@@ -97,7 +113,7 @@ function init() {
 		$("#nav-wrapper").removeClass("expanded");
 	});
 
-};
+}
 
 $(document).ready(function() {
 
@@ -111,8 +127,7 @@ $(document).ready(function() {
 
 	// Smooth scroll to anchors
 	$('.smooth').click(function() {
-	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-	      || location.hostname == this.hostname) {
+	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
 
 	    var target = $(this.hash);
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -127,8 +142,7 @@ $(document).ready(function() {
 
 	// Smooth scroll to anchors
 	$('.smooth-mobile').click(function() {
-	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-	      || location.hostname == this.hostname) {
+	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
 
 	    var target = $(this.hash);
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -150,15 +164,15 @@ $(document).ready(function() {
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()
         var proceed = true;
-        if(user_name==""){
+        if(user_name===""){
             $('input[name=name]').css('border-color','red');
             proceed = false;
         }
-        if(user_email==""){
+        if(user_email===""){
             $('input[name=email]').css('border-color','red');
             proceed = false;
         }
-        if(user_message=="") {
+        if(user_message==="") {
             $('textarea[name=message]').css('border-color','red');
             proceed = false;
         }

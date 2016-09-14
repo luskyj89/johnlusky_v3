@@ -5786,12 +5786,12 @@ h1, h2, h3 {
   position: relative; }
 
 hr {
-  border: solid #1effc7;
+  border: solid #0082ff;
   border-width: 4px 0 0;
   margin: 1.25rem 0 1.1875rem; }
 
 a {
-  color: #1effc7;
+  color: #0082ff;
   font-weight: bold;
   text-decoration: underline; }
   a:hover {
@@ -5799,16 +5799,16 @@ a {
 
 h3 {
   font-size: 23px;
-  color: #1effc7; }
+  color: #0082ff; }
 
 ::-moz-selection {
-  background: #18c99d; }
+  background: #0082ff; }
 
 ::selection {
-  background: #18c99d; }
+  background: #0082ff; }
 
 ::-moz-selection {
-  background: #18c99d; }
+  background: #0082ff; }
 
 .space {
   position: absolute;
@@ -5902,13 +5902,41 @@ h3 {
   .explore.entered {
     opacity: .6; }
 
-@keyframes explorein {}[data-magellan-expedition], [data-magellan-expedition-clone] {
+@keyframes explorein {}#hud {
+  box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  bottom: 50px;
+  width: 400px;
+  margin-left: -200px;
+  padding: 25px 20px;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  cursor: crosshair; }
+  #hud:hover {
+    background: rgba(0, 0, 0, 0.6); }
+  #hud .hud-btn {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 5px;
+    color: #28caff;
+    cursor: crosshair; }
+    #hud .hud-btn:hover {
+      color: #bf8bff;
+      text-shadow: #f0f1f1 0 0px 19px; }
+
+[data-magellan-expedition], [data-magellan-expedition-clone] {
   height: 113px;
   background: transparent url(../img/bg-gradient.png) repeat-x;
   z-index: 50;
   min-width: 100%;
   padding: 10px;
-  border-bottom: 4px solid #1effc7; }
+  border-bottom: 4px solid #0082ff; }
 
 [data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
   position: relative;
