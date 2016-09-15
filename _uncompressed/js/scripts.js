@@ -11,6 +11,7 @@ var contactMn 		= $("#contact-mn");
 var logo			= $(".logo");
 var jobTitle		= $(".idd-hdr");
 var hud				= $("#hud");
+var space 			= $(".space");
 
 var spaceVideo;
 
@@ -47,7 +48,7 @@ function rollInTopNav() {
 function videoStarter() {
 
 	$('#space-video').vide({
-		mp4:'video/space-planet-with-reverse.mp4',
+		mp4:'video/space-planet-with-reverse50.mp4',
 	//	ogv:'video/shutterstock_v2529842.ogv',
 	//	webm:'video/shutterstock_v2529842.webm',
 		poster:'img/space-poster.jpg',
@@ -81,8 +82,14 @@ function videoStarter() {
 
 	});
 
+	hud.mouseover(function() {
+		space.addClass("seeking-state");
+	});
+
 	hud.mouseout(function() {
+		// setTimeout(function() { spaceVideoObject.play(); }, 1000);
 		spaceVideoObject.play();
+		space.removeClass("seeking-state");
 	});
 }
 

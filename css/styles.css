@@ -5821,7 +5821,10 @@ h3 {
   opacity: .3;
   animation-name: lightsdown;
   animation-duration: 4s;
-  animation-play-state: running; }
+  animation-play-state: running;
+  transition: opacity 1s ease-out; }
+  .space.seeking-state {
+    opacity: .6; }
 
 @keyframes lightsdown {
   0% {
