@@ -18,7 +18,7 @@
 	<!-- For iPhone: -->
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57x57-precomposed.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
@@ -27,7 +27,7 @@
 
     <section id="wrapper">
 
-    	<section id="top" data-magellan-destination="top">
+    	<section id="top">
 
     		<h1 class="logo">John Lusky</h1>
 
@@ -36,9 +36,9 @@
     		<!-- <a class="explore smooth" href="#about">Explore</a> -->
 
             <div id="hud">
-                <a id="hud-work" class="hud-btn" href="#" title="Work">Work</a>
-                <a id="hud-about" class="hud-btn" href="#" title="About">About</a>
-                <a id="hud-contact" class="hud-btn" href="#" title="Contact">Contact</a>
+                <a id="hud-about" class="hud-btn smooth-mobile" href="#about" title="About">About</a>
+                <a id="hud-work" class="hud-btn smooth-mobile" href="#work" title="Work">Work</a>
+                <a id="hud-contact" class="hud-btn smooth-mobile" href="#contact" title="Contact">Contact</a>
             </div>
 
     	</section>
@@ -46,53 +46,7 @@
     	<!--<div class="space" data-stellar-background-ratio=".5"></div>-->
 
     	<div id="space-video" class="space show-for-medium-up"></div>
-        <div class="solid-black show-for-medium-up"></div>
-
-    	<div data-magellan-expedition="fixed" id="sticky-nav" class="nav-controller show-for-large-up">
-		  	<dl class="sub-nav">
-			    <dd id="about-mn" data-magellan-arrival="about"><a href="#about">About</a></dd>
-			    <dd id="work-mn" data-magellan-arrival="work"><a href="#work">Work</a></dd>
-			    <dd data-magellan-arrival="top"><a class="nav-logo" href="#top">JL</a></dd>
-				<dd id="contact-mn" data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
-				<dd><a href="#" class="links-hvr">Links</a>
-					<ul>
-						<li><a href="files/lusky-resume_webinfo.pdf" target="_blank" title="Resume">Resume</a></li>
-		    			<li><a href="https://www.linkedin.com/pub/john-lusky/46/780/a79" target="_blank" title="LinkedIn">LinkedIn</a></li>
-		    			<li><a href="https://twitter.com/lusky_xx89" target="_blank" title="Twitter">Twitter</a></li>
-					</ul>
-				</dd>
-		  	</dl>
-		</div>
-
-		<div id="nav-wrapper" class="fixed">
-			<nav id="jl-mobile-nav" class="top-bar hide-for-large-up" data-topbar data-options="scrolltop: false">
-			  <ul class="title-area">
-			    <li class="name">
-			      <h1><a href="#top" class="mobile-nav-logo smooth">John Lusky</a></h1>
-			    </li>
-			    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
-			  </ul>
-
-			  <section class="top-bar-section">
-			    <!-- Right Nav Section -->
-			    <ul class="right">
-			      <li><a href="#about" class="smooth-mobile">About</a></li>
-		          <li><a href="#work" class="smooth-mobile">Work</a></li>
-		          <li><a href="#contact" class="smooth-mobile">Contact</a></li>
-		          <li class="has-dropdown">
-		          	<a href="#">Links</a>
-		          	<ul class="dropdown">
-		                <li><a href="files/lusky-resume_webinfo.pdf">Resume</a>
-		                <li><a href="https://www.linkedin.com/pub/john-lusky/46/780/a79">LinkedIn</a>
-		                <li><a href="https://twitter.com/lusky_xx89">Twitter</a>
-		          	</ul>
-		          </li>
-			    </ul>
-			  </section>
-			</nav>
-		</div>
-
-	    <div class="row" id="about" data-magellan-destination="about">
+	    <div class="row" id="about">
 			<div class="large-12 columns">
 				<h2>About</h2>
 			</div>
@@ -110,23 +64,13 @@
 
 		<div class="row" id="about-content2">
 			<div class="large-8 columns">
-				<p>Born in the strange, humble town of Birdsboro, Pennsylvania, I began experimenting with web design and web development
-				when I was 13 years old. I attended Philadelphia University in 2008, and I graduated as the top student in my major with
-				a B.S. in Interactive Design and Media in 2012. I started working at 1 Trick Pony- an ad agency based out of Hammonton, New Jersey- a few days
-				after graduation.</p>
+				<p>Raised in the small town of Birdsboro, Pennsylvania, I began experimenting with web design and web development when I was 13 years old. I attended Philadelphia University in 2008, and I graduated as the top student in my major with a B.S. in Interactive Design and Media in 2012. I started working at 1 Trick Pony – an ad agency based out of Hammonton, New Jersey – a few days after graduation.</p>
 
-				<p>My current job is a full-time development gig (probably 90% front-end) and I’ve worked with several great clients such
-				as American Express, Virgin Mobile, Sony Pictures Classics, Turner Classic Movies, and Hard Rock Hotels over the past three
-				years. However, I do both development and design work for freelance clients on the side.</p>
-
-				<p>As far as other hobbies go, I enjoy blogging, streaming, and podcasting in my spare time (for <a href="http://multitoad.com" title="Multitoad" target="_blank">multitoad.com</a>). </p>
+				<p>My current job is a full-time development gig (probably 90% front-end) and I’ve worked with several great clients such as American Express, Virgin Mobile/Hotels/America, Sony Pictures Classics, Turner Classic Movies, and Hard Rock Hotels over the past four years. I've also recently done freelance dev work for Maroon 5 and DJ Shadow.</p>
 			</div>
 			<div class="large-4 columns">
-				<h3>Currently Accepting New Clients</h3>
-				<p>I’m currently accepting new freelance clients of all shapes and sizes. I’m available for both design and development of
-				websites, email campaigns, applications, and more.</p>
-
-				<p>If you’re interested in getting great work for a reasonable price, <a href="#contact">get in touch</a> now.</p>
+				<h3>LINKS</h3>
+				<p></p>
 
 				<hr>
 

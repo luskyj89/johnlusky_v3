@@ -227,18 +227,6 @@ $( window ).resize(function() {
 
 $(window).scroll( function() {
 
-	if ( aboutMn.hasClass("active") ) {
-
-		//$("#chart").fadeIn(2000);
-
-		$( ".bg-triangle" ).animate({
-		    opacity: 1,
-		    top: -80
-		  }, 1500, function() {
-		    // Animation complete.
-		});
-	}
-
 	if ($(window).scrollTop() > frameHeight - 10) {
 		// Fires when scrolling down past initial frame height
 	}
@@ -255,5 +243,12 @@ $(window).scroll( function() {
 
 		jobTitle.removeClass("fade-on");
 		jobTitle.addClass("fade-off");
+	}
+
+	if ( $(window).scrollTop() > 1000 ) {
+		$( ".bg-triangle" ).animate({
+		    opacity: 1,
+		    top: -120
+		  }, 1500);
 	}
 });

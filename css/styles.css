@@ -5775,20 +5775,32 @@ th {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background: #000000 url(../img/bg-main.png) repeat;
+  background: #000000 url(../img/twinkle_twinkle.png) repeat;
   background-attachment: fixed;
   overflow-x: hidden; }
 
 h1, h2, h3 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
 
 #wrapper {
   position: relative; }
+
+.row {
+  position: relative;
+  margin-top: 20px;
+  z-index: 1010; }
 
 hr {
   border: solid #0082ff;
   border-width: 4px 0 0;
   margin: 1.25rem 0 1.1875rem; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px; }
 
 a {
   color: #0082ff;
@@ -5797,9 +5809,23 @@ a {
   a:hover {
     color: #f0f1f1; }
 
+h2 {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 20px auto;
+  padding: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 8px;
+  color: #000000;
+  background: #0082ff; }
+
 h3 {
-  font-size: 23px;
-  color: #0082ff; }
+  font-size: 18px;
+  color: #0082ff;
+  letter-spacing: 5px;
+  text-transform: uppercase; }
 
 ::-moz-selection {
   background: #0082ff; }
@@ -6061,24 +6087,12 @@ p {
   background-size: 100%;
   text-indent: -9999px; }
 
-#about h2 {
-  position: relative;
-  left: -65px;
-  margin-top: 10px;
-  width: 400px;
-  height: 215px;
-  background: transparent url(../img/sprite-headers.png) no-repeat;
-  background-position: 0 -152px;
-  text-indent: -9999px; }
-
 #about-content1 {
   position: relative; }
   #about-content1 #chart {
     position: relative;
-    top: -70px;
-    left: -30px;
     width: 664px;
-    height: 530px;
+    height: 450px;
     background: transparent url(../img/gfx-chart.png) no-repeat;
     z-index: 10; }
   #about-content1 .bg-triangle {
@@ -6091,28 +6105,8 @@ p {
     opacity: 0;
     z-index: 9; }
 
-#work h2 {
-  position: relative;
-  left: -65px;
-  margin-top: 10px;
-  width: 400px;
-  height: 215px;
-  background: transparent url(../img/sprite-headers.png) no-repeat;
-  background-position: 0 -558px;
-  text-indent: -9999px; }
-
-#work p {
-  position: relative;
-  top: -27px; }
-  @media all and (max-width: 641px) {
-    #work p {
-      top: 0; } }
-
 .work-content {
   margin-bottom: 100px; }
-  .work-content a {
-    font-family: "mohavebold", arial, sans-serif;
-    font-size: 20px; }
 
 #contact h2 {
   position: relative;

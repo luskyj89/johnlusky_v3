@@ -11,23 +11,37 @@
 ///// Global Styles
 body {
     -webkit-font-smoothing: antialiased;
-    background: $black url(../img/bg-main.png) repeat;
+    background: $black url(../img/twinkle_twinkle.png) repeat;
     background-attachment: fixed;
 	overflow-x: hidden;
 }
 
 h1, h2, h3 {
-    font-family: $robotoBold;
+    font-family: $roboto;
+    font-weight: 700;
 }
 
 #wrapper {
     position: relative;
 }
 
+.row {
+    position: relative;
+    margin-top: 20px;
+    z-index: 1010;
+}
+
 hr {
     border: solid $blue;
     border-width: 4px 0 0;
     margin: 1.25rem 0 1.1875rem;
+}
+
+p {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
 }
 
 a {
@@ -40,9 +54,24 @@ a {
     }
 }
 
+h2 {
+    box-sizing: border-box;
+    width: 320px;
+    margin: 20px auto;
+    padding: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px;
+    color: $black;
+    background: $blue;
+}
+
 h3 {
-    font-size: 23px;
+    font-size: 18px;
     color: $blue;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 ::selection {
@@ -195,7 +224,7 @@ h3 {
     .hud-btn {
         display: inline-block;
         margin: 0 10px;
-        font-family: $robotoBold;
+        font-family: $roboto;
         font-size: 15px;
         text-transform: uppercase;
         text-align: center;
@@ -415,16 +444,7 @@ p {
 
 #about {
 
-	h2 {
-		position: relative;
-		left: -65px;
-		margin-top: 10px;
-		width: 400px;
-		height: 215px;
-		background: transparent url(../img/sprite-headers.png) no-repeat;
-		background-position: 0 -152px;
-		text-indent: -9999px;
-	}
+
 
 }
 
@@ -432,12 +452,9 @@ p {
     position: relative;
 
     #chart {
-        //display: none;
         position: relative;
-        top: -70px;
-        left: -30px;
         width: 664px;
-        height: 530px;
+        height: 450px;
         background: transparent url(../img/gfx-chart.png) no-repeat;
         z-index: 10;
     }
@@ -460,35 +477,10 @@ p {
 
 #work {
 
-    h2 {
-        position: relative;
-        left: -65px;
-        margin-top: 10px;
-        width: 400px;
-        height: 215px;
-        background: transparent url(../img/sprite-headers.png) no-repeat;
-        background-position: 0 -558px;
-        text-indent: -9999px;
-    }
-
-    p {
-        position: relative;
-        top: -27px;
-
-        @media all and (max-width: 641px){
-            top: 0;
-        }
-    }
-
 }
 
 .work-content {
     margin-bottom: 100px;
-
-    a {
-        font-family: $mohaveBold;
-        font-size: 20px;
-    }
 
 }
 
