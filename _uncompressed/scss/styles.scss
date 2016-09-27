@@ -138,6 +138,17 @@ h3 {
     opacity: 1!important;
 }
 
+.hidden-text {
+    display: none;
+}
+
+.show-hidden-text {
+    display: block;
+    margin-bottom: 1.25rem;
+    font-size: 17px;
+    line-height: 28px;
+}
+
 #top {
   position: relative;
   width: 100%;
@@ -468,6 +479,16 @@ p {
         background: transparent url(../img/gfx-triangle.png) no-repeat;
         opacity: 0;
         z-index: 9;
+    }
+
+}
+
+#about-content2 {
+
+    [class^="icon-"], [class*=" icon-"] {
+        margin-right: 10px;
+        font-size: 40px;
+        text-decoration: none;
     }
 
 }

@@ -120,6 +120,12 @@ function init() {
 		$("#nav-wrapper").removeClass("expanded");
 	});
 
+	$(".show-hidden-text").click(function(e) {
+		e.preventDefault();
+		$(this).hide();
+		$(this).parent().find(".hidden-text").slideDown();
+	});
+
 }
 
 $(document).ready(function() {

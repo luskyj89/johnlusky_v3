@@ -64,13 +64,18 @@
 
 		<div class="row" id="about-content2">
 			<div class="large-8 columns">
-				<p>Raised in the small town of Birdsboro, Pennsylvania, I began experimenting with web design and web development when I was 13 years old. I attended Philadelphia University in 2008, and I graduated as the top student in my major with a B.S. in Interactive Design and Media in 2012. I started working at 1 Trick Pony – an ad agency based out of Hammonton, New Jersey – a few days after graduation.</p>
+				<p>Raised in the small town of Birdsboro, Pennsylvania, I began experimenting with web design and web development when I was 13. I attended Philadelphia University in 2008, and I graduated as the top student in my major with a B.S. in Interactive Design and Media in 2012. I started working at 1 Trick Pony – an ad agency based out of Hammonton, New Jersey – a few days after graduation.</p>
 
-				<p>My current job is a full-time development gig (probably 90% front-end) and I’ve worked with several great clients such as American Express, Virgin Mobile/Hotels/America, Sony Pictures Classics, Turner Classic Movies, and Hard Rock Hotels over the past four years. I've also recently done freelance dev work for Maroon 5 and DJ Shadow.</p>
+				<p>My current job is a full-time development gig (probably 90% front-end). I prefer to write code with <a href="https://atom.io/" target="_blank" title="Atom">Atom</a>, I like <a href="http://gulpjs.com/" target="_blank" title="Gulp">Gulp</a> for compiling, and I use <a href="https://www.git-tower.com/mac/" target="_blank" title="Tower">Tower</a> (Git) for collaboration.</p>
+
+                <a class="show-hidden-text" href="#" title="Read More">Continue reading more (less essential) information...</a>
+
+                <p class="hidden-text">I play video games to relax when I have free time. I experimented with game development in college and made a basic FPS with the Unity engine for my senior project. I'm cursed with lactose intolerance despite my love for mozzarella sticks and pizza. I quote The Office a lot (I can't help this). I try not to be too cynical.</p>
 			</div>
 			<div class="large-4 columns">
-				<h3>LINKS</h3>
-				<p></p>
+				<a class="icon-github" href="https://github.com/luskyj89" title="Github" target="_blank"></a>
+                <a class="icon-linkedin" href="https://www.linkedin.com/in/john-lusky-a7978046" title="LinkedIn" target="_blank"></a>
+                <a class="icon-mail" href="#contact" title="Contact" target="_blank"></a>
 
 				<hr>
 
