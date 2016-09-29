@@ -47,10 +47,36 @@ function rollInTopNav() {
 // Video BG and HUD Control
 function videoStarter() {
 
+	$('#stats').vide({
+		mp4:'video/stats-clip.mp4',
+		ogv:'video/stats-clip.ogv',
+		webm:'video/stats-clip.webm',
+		poster:'img/space-poster.jpg',
+		}, {
+		loop: true,
+		muted: true,
+		autoplay: true,
+		posterType: "jpg",
+		className: "stats"
+	});
+
+	$('#stream-boy').vide({
+		mp4:'video/streamboy-clip.mp4',
+		ogv:'video/streamboy-clip.ogv',
+		webm:'video/streamboy-clip.webm',
+		poster:'img/space-poster.jpg',
+		}, {
+		loop: true,
+		muted: true,
+		autoplay: true,
+		posterType: "jpg",
+		className: "stream-boy"
+	});
+
 	$('#space-video').vide({
 		mp4:'video/space-planet-with-reverse50.mp4',
-	//	ogv:'video/shutterstock_v2529842.ogv',
-	//	webm:'video/shutterstock_v2529842.webm',
+		ogv:'video/space-planet-with-reverse50.ogv',
+		webm:'video/space-planet-with-reverse50.webm',
 		poster:'img/space-poster.jpg',
 		}, {
 		loop: true,
@@ -58,7 +84,7 @@ function videoStarter() {
 		autoplay: true,
 		posterType: "jpg",
 		className: "space-video"
-		});
+	});
 
 	// Get instance of the plugin
 	var spaceVideo = $('#space-video').data('vide');

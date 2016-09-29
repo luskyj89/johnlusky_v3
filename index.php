@@ -88,7 +88,9 @@
 		<div class="row" id="work" data-magellan-destination="work">
 			<div class="large-12 columns">
 				<h2>Work</h2>
-                <p>Please <a href="#contact">contact me directly</a> for more recent examples of my work.</p>
+                <p class="medium-centered">Unfortunately, contractual restrictions prohibit me from showing some of my most recent and relevant work publicly. Here's a list of some notable clients I have experience working with. If you'd like to see my work, please <a href="#contact">contact me directly</a>. You can also check out some experimental projects I've worked on in my free time below.</p>
+
+                <figure id="clients"></figure>
 			</div>
 		</div>
 
@@ -106,17 +108,9 @@
 			</div>
 			<div class="large-8 columns">
 
-				<ul class="work-orbit" data-orbit>
-					<li>
-						<img src="img/screens-xback2.jpg" alt="Xback slide 1" />
-					</li>
-					<li class="active">
-						<img src="img/screens-xback1.jpg" alt="Xback slide 2" />
-					</li>
-					<li>
-						<img src="img/screens-xback3.jpg" alt="Xback slide 3" />
-					</li>
-				</ul>
+				<div id="stream-boy">
+                    <div class="twinkle-overlay"></div>
+                </div>
 
 			</div>
 			<div class="large-4 columns show-for-large-up">
@@ -147,17 +141,9 @@
 
 			<div class="large-8 columns">
 
-				<ul class="work-orbit" data-orbit>
-					<li>
-						<img src="img/screens-armstrong2.jpg" alt="The Armstrong Lie slide 1" />
-					</li>
-					<li class="active">
-						<img src="img/screens-armstrong1.jpg" alt="The Armstrong Lie slide 2" />
-					</li>
-					<li>
-						<img src="img/screens-armstrong3.jpg" alt="The Armstrong Lie slide 3" />
-					</li>
-				</ul>
+                <div id="stats">
+                    <div class="twinkle-overlay"></div>
+                </div>
 
 			</div>
 		</div>
