@@ -99,8 +99,8 @@ function videoStarter() {
 		// Divide by 4 and round up to get a clean percentage
 		var innerHudPosition = Math.round( ( event.pageX - hudPosition.left + 200 ) / 4 );
 
-		console.log("Camera Position: " + innerHudPosition + "%");
-		console.log("Video Time: " + spaceVideoObject.currentTime );
+		//console.log("Camera Position: " + innerHudPosition + "%");
+		//console.log("Video Time: " + spaceVideoObject.currentTime );
 
 		// Set the video frame position relative to innerHudPosition
 		spaceVideoObject.currentTime = innerHudPosition / 2;

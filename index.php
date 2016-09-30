@@ -85,73 +85,62 @@
 			</div>
 		</div>
 
-		<div class="row" id="work" data-magellan-destination="work">
+		<div class="row" id="work">
 			<div class="large-12 columns">
 				<h2>Work</h2>
-                <p class="medium-centered">Unfortunately, contractual restrictions prohibit me from showing some of my most recent and relevant work publicly. Here's a list of some notable clients I have experience working with. If you'd like to see my work, please <a href="#contact">contact me directly</a>. You can also check out some experimental projects I've worked on in my free time below.</p>
+                <p class="medium-centered more-margin">Unfortunately, contractual restrictions prohibit me from showing some of my most recent and relevant work publicly. Here's a list of some notable clients I have experience working with. If you'd like to see my work, please <a href="#contact">contact me directly</a>.
 
                 <figure id="clients"></figure>
+
+                <hr>
+
+                <h3 class="title-centered">Current Experimental Project</h3>
+                <p class="medium-centered">I like to keep busy outside of work with fun side projects that I can use to cherry pick new skills I want to learn. Here's what I'm working on right now.</p>
 			</div>
 		</div>
 
 		<div class="row work-content" id="xback">
-			<div class="large-4 columns hide-for-large-up">
-				<h3>Xbackbrace.com - Design/Build</h3>
 
-				<hr>
-
-				<p>This was a full build that went through the planning, design, and development phases.</p>
-
-				<p>I built the site with a Wordpress content management system so the client could easilly add, modify, and delete products.</p>
-
-				<p><a href="http://xbackbrace.com" target="_blank" title="Xback Bracing">VISIT LIVE SITE</a></p>
-			</div>
 			<div class="large-8 columns">
 
 				<div id="stream-boy">
-                    <div class="twinkle-overlay"></div>
+                    <!-- <div class="twinkle-overlay"></div> -->
                 </div>
 
 			</div>
-			<div class="large-4 columns show-for-large-up">
-				<h3>Xbackbrace.com - Design/Build</h3>
+			<div class="large-4 columns ">
+
+                <h3>Web App - Streamboy</h3>
 
 				<hr>
 
-				<p>This was a full build that went through the planning, design, and development phases.</p>
-
-				<p>I built the site with a Wordpress content management system so the client could easilly add, modify, and delete products.</p>
-
-				<p><a href="http://xbackbrace.com" target="_blank" title="Xback Bracing">VISIT LIVE SITE</a></p>
-			</div>
-		</div>
-
-		<div class="row work-content" id="armstrong-lie">
-			<div class="large-4 columns">
-				<h3>The Armstrong Lie - Build</h3>
-
-				<hr>
-
-				<p>1 Trick Pony project - Lead Developer</p>
-
-				<p>The Armstrong Lie was a documentary released by Sony Pictures Classics.</p>
-
-				<p><a href="http://www.sonyclassics.com/thearmstronglie/site/" target="_blank" title="The Armstrong Lie">VISIT LIVE SITE</a></p>
-			</div>
-
-			<div class="large-8 columns">
-
-                <div id="stats">
-                    <div class="twinkle-overlay"></div>
-                </div>
+				<p>A friend of mine tried his hand at streaming a while back and I noticed he was playing games with his viewers on stream. They were simple games but they took some complicated and tiresome work inside of OBS to function. I decided to recreate his games ("Where's that Toadboy?" and "Toadboy Quizzo!") as a web app that he could more easily use instead. I kept adding features and games until it became what it is now.</p>
 
 			</div>
 		</div>
+
+        <div class="row">
+			<div class="large-12 columns written-content">
+
+                <p>OBS is a free open source application that most Twitch and Youtube streamers use to do their thing. My web app is intended to function as a window capture outside of OBS. The user overlays the window capture over their streaming scene and matches chroma key colors between apps for a transparent background. Then they can activate games, tools, effects, and audio from Streamboy's control panel to enhance their streams.</p>
+
+                <p>The app utilizes a combination of CSS3 and jQuery for animation along with HTML5 audio for music and sounds. Javascript powers the control panel, games, and other tools. There's a scoreboard for fighting games, a giveaway screen to display game box art, and a screen that pulls Youtube embeds into the viewport &mdash; intending to eliminate the need to line up window captures every time the user wants to display a Youtube video on their stream.</p>
+
+                <p>I named the app Streamboy and added convenience features like hotkeys to make it easier to use. I intend to write documentation and open the app up to allow anyone to use, but that's a work in progress. Shout-out to Luke VanTrieste for the original games, QA help, and some creative direction.</p>
+
+                <p>
+                    <a class="link-button" href="http://streamboy.multitoad.com" target="_blank" title="Streamboy">&Lscr;&nbsp; Try it out</a><br>
+                    <a class="link-button" href="https://github.com/luskyj89/multitoad-seapp" target="_blank" title="Github">&Lscr;&nbsp; Fork it on Github</a>
+                </p>
+
+                <hr>
+
+            </div>
+        </div>
 
 		<div class="row" id="contact" data-magellan-destination="contact">
 			<div class="large-7 columns">
 				<h2>Contact</h2>
-				<p>If you're interested in working with me, don't hesitate to reach out. I'm available for freelance projects of (nearly) any size, from total redesigns to email campaigns.</p>
 				<fieldset id="contact_form">
 					<div id="result"></div>
 					<input type="text" name="name" id="name" value="Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
