@@ -145,7 +145,7 @@
 					<div id="result"></div>
 					<input type="text" name="name" id="name" value="Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
 					<input type="email" name="email" id="email" value="Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
-					<textarea name="message" id="message" placeholder="Message"></textarea>
+					<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 					<button class="submit_btn" id="submit_btn">Send</button>
 				</fieldset>
 			</div>
@@ -160,7 +160,7 @@
 
     	<div class="row" id="footer">
 			<div class="large-10 columns">
-				<a href="#top" class="smooth" title="johnlusky.com"><img src="img/gfx-footer-logo.png" alt="John Lusky" /></a>
+				<a href="#top" class="smooth" title="johnlusky.com"><img src="img/gfx-footer-logo.png" width="200" height="126" alt="John Lusky" /></a>
 				<ul>
 					<li><a href="files/lusky-resume_webinfo.pdf" class="smooth" title="Resume">Resume</a></li>
 					<li><a href="https://www.linkedin.com/pub/john-lusky/46/780/a79" class="smooth" title="LinkedIn">LinkedIn</a></li>
