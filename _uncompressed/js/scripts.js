@@ -24,11 +24,6 @@ function resizer(e) {
 	$(".space").css('height', frameHeight);
 	$(".carbon").css('height', frameHeight);
 
-	if (frameWidth < 626) {
-		var anchorOffset = 50;
-	} else {
-		var anchorOffset = 0;
-	}
 }
 
 // Animations
@@ -156,12 +151,6 @@ function init() {
 
 $(document).ready(function() {
 
-	if (frameWidth < 626) {
-		var anchorOffset = 50;
-	} else {
-		var anchorOffset = 0;
-	}
-
 	init();
 
 	// Smooth scroll to anchors
@@ -172,7 +161,7 @@ $(document).ready(function() {
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	    if (target.length) {
 	      $('html,body').animate({
-	        scrollTop: target.offset().top - 110
+	        scrollTop: target.offset().top
 	      }, 1000, "easeOutQuad");
 	      return false;
 	    }
@@ -187,7 +176,7 @@ $(document).ready(function() {
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	    if (target.length) {
 	      $('html,body').animate({
-	        scrollTop: target.offset().top - anchorOffset
+	        scrollTop: target.offset().top
 	      }, 1000, "easeOutQuad");
 	      return false;
 	    }

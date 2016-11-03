@@ -27,6 +27,12 @@
 
     <section id="wrapper">
 
+        <div class="navigation mobile-nav">
+            <a class="hud-btn smooth-mobile" href="#about" title="About">About</a>
+            <a class="hud-btn smooth-mobile" href="#work" title="Work">Work</a>
+            <a class="hud-btn smooth-mobile" href="#contact" title="Contact">Contact</a>
+        </div>
+
     	<section id="top">
 
     		<h1 class="logo">John Lusky</h1>
@@ -35,7 +41,7 @@
 
     		<!-- <a class="explore smooth" href="#about">Explore</a> -->
 
-            <div id="hud">
+            <div id="hud" class="navigation">
                 <a id="hud-about" class="hud-btn smooth-mobile" href="#about" title="About">About</a>
                 <a id="hud-work" class="hud-btn smooth-mobile" href="#work" title="Work">Work</a>
                 <a id="hud-contact" class="hud-btn smooth-mobile" href="#contact" title="Contact">Contact</a>
@@ -119,14 +125,18 @@
 			</div>
 		</div>
 
-        <div class="row">
+        <div class="row no-margin">
 			<div class="large-12 columns written-content">
 
-                <p>OBS is a free open source application that most Twitch and Youtube streamers use to do their thing. My web app is intended to function as a window capture outside of OBS. The user overlays the window capture over their streaming scene and matches chroma key colors between apps for a transparent background. Then they can activate games, tools, effects, and audio from Streamboy's control panel to enhance their streams.</p>
+                <a class="show-hidden-text" href="#" title="Read More">Expand a more detailed description.</a>
 
-                <p>The app utilizes a combination of CSS3 and jQuery for animation along with HTML5 audio for music and sounds. Javascript powers the control panel, games, and other tools. There's a scoreboard for fighting games, a giveaway screen to display game box art, and a screen that pulls Youtube embeds into the viewport &mdash; intending to eliminate the need to line up window captures every time the user wants to display a Youtube video on their stream.</p>
+                <article class="hidden-text">
+                    <p>OBS is a free open source application that most Twitch and Youtube streamers use to do their thing. My web app is intended to function as a window capture outside of OBS. The user overlays the window capture over their streaming scene and matches chroma key colors between apps for a transparent background. Then they can activate games, tools, effects, and audio from Streamboy's control panel to enhance their streams.</p>
 
-                <p>I named the app Streamboy and added convenience features like hotkeys to make it easier to use. I intend to write documentation and open the app up to allow anyone to use, but that's a work in progress. Shout-out to Luke VanTrieste for the original games, QA help, and some creative direction.</p>
+                    <p>The app utilizes a combination of CSS3 and jQuery for animation along with HTML5 audio for music and sounds. Javascript powers the control panel, games, and other tools. There's a scoreboard for fighting games, a giveaway screen to display game box art, and a screen that pulls Youtube embeds into the viewport &mdash; intending to eliminate the need to line up window captures every time the user wants to display a Youtube video on their stream.</p>
+
+                    <p>I named the app Streamboy and added convenience features like hotkeys to make it easier to use. I intend to write documentation and open the app up to allow anyone to use, but that's a work in progress. Shout-out to Luke VanTrieste for the original games, QA help, and some creative direction.</p>
+                </article>
 
                 <p>
                     <a class="link-button" href="http://streamboy.multitoad.com" target="_blank" title="Streamboy">&Lscr;&nbsp; Try it out</a><br>

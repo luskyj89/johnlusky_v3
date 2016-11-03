@@ -29,6 +29,10 @@ h1, h2, h3 {
     position: relative;
     margin-top: 20px;
     z-index: 1010;
+
+    &.no-margin {
+        margin: 0 auto;
+    }
 }
 
 hr {
@@ -82,6 +86,12 @@ h2 {
     letter-spacing: 8px;
     color: $black;
     background: $blue;
+
+    @media only screen and (max-width: 730px) {
+        padding: 19px 30px;
+        font-size: 16px;
+    }
+
 }
 
 h3 {
@@ -199,8 +209,6 @@ h3 {
         top: 400px;
         width: 520px;
         margin-left: -260px;
-        padding: 30px;
-        font-size: 20px;
         text-transform: uppercase;
         text-align: center;
         letter-spacing: 8px;
@@ -209,6 +217,11 @@ h3 {
         opacity: 0;
         transition: opacity 1s ease-out;
         transition-delay: .5s;
+    }
+
+    @media all and (max-width: 730px) {
+        background: url(../img/bg-space-still.jpg) no-repeat;
+        background-size: cover;
     }
 
 }
@@ -240,7 +253,7 @@ h3 {
 
 }
 
-#hud {
+.navigation {
     box-sizing: border-box;
     position: fixed;
     left: 50%;
@@ -272,6 +285,28 @@ h3 {
             color: $lightPurple;
             text-shadow: $white 0 0px 19px;
         }
+    }
+
+    @media all and (max-width: 730px) {
+        display: none;
+    }
+}
+
+.mobile-nav {
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.8);
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    @media all and (max-width: 730px) {
+        display: block;
     }
 }
 
@@ -531,11 +566,32 @@ p {
     margin: 0 auto;
     background: url(../img/gfx-clients.png) no-repeat;
     background-size: 100%;
+
+    @media all and (max-width: 615px) {
+        height: 215px;
+    }
+
+    @media all and (max-width: 550px) {
+        height: 190px;
+    }
+
+    @media all and (max-width: 480px) {
+        height: 160px;
+    }
+
+    @media all and (max-width: 420px) {
+        height: 130px;
+    }
+
+    @media all and (max-width: 350px) {
+        height: 100px;
+    }
 }
 
 #stream-boy {
     width: 100%;
     height: 460px;
+    margin-bottom: 20px;
     border: 10px solid $purple;
 }
 
@@ -557,10 +613,12 @@ p {
 }
 
 .written-content {
+    float: none;
+    max-width: 650px;
+    margin: 0 auto;
 
-    p {
-        max-width: 650px;
-        margin: 30px auto;
+    @media all and (max-width: 1024px) {
+        max-width: none;
     }
 
 }
@@ -736,33 +794,6 @@ footer {
 
 	}
 
-	#about h2 {
-		left: 0;
-		margin: 10px auto 0 auto;
-		width: 252px;
-		height: 95px;
-		background-position: 0 -137px;
-		background-size: 500px;
-	}
-
-	#work h2 {
-		left: 0;
-		margin: 10px auto 0 auto;
-		width: 242px;
-		height: 95px;
-		background-position: 0 -404px;
-		background-size: 500px;
-	}
-
-	#contact h2 {
-		left: 0;
-		margin: 10px auto 0 auto;
-		width: 242px;
-		height: 95px;
-		background-position: -33px -265px;
-		background-size: 500px;
-	}
-
 	#contact p {
 		margin: 0 0 40px 0;
 	}
@@ -779,10 +810,10 @@ footer {
         }
 
         .idd-hdr {
+            top: 260px;
             width: 320px;
             height: 81px;
             margin-left: -160px;
-            background-size: 340px;
         }
     }
 }
