@@ -64,7 +64,9 @@
 				<div class="bg-triangle hide-for-small"></div>
 			</div>
 			<div class="large-4 columns">
-				<img class="show-for-large-up" src="img/photo-me.jpg" alt="John Lusky" />
+				<div class="bio-photo">
+                    <img class="show-for-large-up" src="img/photo-me.jpg" alt="John Lusky" />
+                </div>
 			</div>
 		</div>
 
@@ -87,7 +89,7 @@
 
 				<p>If you’d like a more comprehensive rundown
 				of my skills and work experience, you can
-				<a href="files/lusky-resume_webinfo.pdf">download my resume</a>.</p>
+				<a href="files/lusky-resume_webinfo.pdf" target="_blank">download my resume</a>.</p>
 			</div>
 		</div>
 
@@ -100,12 +102,12 @@
 
                 <hr>
 
-                <h3 class="title-centered">Current Experimental Project</h3>
-                <p class="medium-centered">I like to keep busy outside of work with fun side projects that I can use to cherry pick new skills I want to learn. Here's what I'm working on right now.</p>
+                <h3 class="title-centered show-for-medium-up">Current Experimental Project</h3>
+                <p class="medium-centered show-for-medium-up">I like to keep busy outside of work with fun side projects that I can use to cherry pick new skills I want to learn. Here's what I'm working on right now.</p>
 			</div>
 		</div>
 
-		<div class="row work-content" id="xback">
+		<div class="row work-content show-for-medium-up" id="xback">
 
 			<div class="large-8 columns">
 
@@ -125,7 +127,7 @@
 			</div>
 		</div>
 
-        <div class="row no-margin">
+        <div class="row no-margin show-for-medium-up">
 			<div class="large-12 columns written-content">
 
                 <a class="show-hidden-text" href="#" title="Read More">Expand a more detailed description.</a>
@@ -172,9 +174,9 @@
 			<div class="large-10 columns">
 				<a href="#top" class="smooth" title="johnlusky.com"><img src="img/gfx-footer-logo.png" width="200" height="126" alt="John Lusky" /></a>
 				<ul>
-					<li><a href="files/lusky-resume_webinfo.pdf" class="smooth" title="Resume">Resume</a></li>
-					<li><a href="https://www.linkedin.com/pub/john-lusky/46/780/a79" class="smooth" title="LinkedIn">LinkedIn</a></li>
-					<li><a href="https://twitter.com/lusky_xx89" class="smooth" title="Twitter">Twitter</a></li>
+					<li><a href="files/lusky-resume_webinfo.pdf" class="smooth" title="Resume" target="_blank">Resume</a></li>
+					<li><a href="https://www.linkedin.com/pub/john-lusky/46/780/a79" class="smooth" title="LinkedIn" target="_blank">LinkedIn</a></li>
+					<li><a href="https://github.com/luskyj89" class="smooth" title="Twitter" target="_blank">Github</a></li>
 				</ul>
 			</div>
 			<div class="large-2 columns">

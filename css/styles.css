@@ -5871,6 +5871,8 @@ a {
   text-decoration: underline; }
   a:hover {
     color: #f0f1f1; }
+  a:focus {
+    color: #0082ff; }
   a.link-button {
     font-size: 18px;
     text-decoration: none; }
@@ -5918,7 +5920,7 @@ h3 {
   background-size: cover;
   background-attachment: fixed;
   z-index: 999;
-  opacity: .3;
+  opacity: .36;
   animation-name: lightsdown;
   animation-duration: 4s;
   animation-play-state: running;
@@ -5930,7 +5932,7 @@ h3 {
   0% {
     opacity: .9; }
   100% {
-    opacity: .3; } }
+    opacity: .36; } }
 
 .solid-black {
   position: absolute;
@@ -5997,6 +5999,9 @@ h3 {
     #top {
       background: url(../img/bg-space-still.jpg) no-repeat;
       background-size: cover; } }
+  @media all and (max-height: 590px) {
+    #top .idd-hdr {
+      display: none; } }
 
 .explore {
   position: fixed;
@@ -6053,6 +6058,7 @@ h3 {
   left: 0;
   width: 100%;
   margin-left: 0;
+  padding: 15px 20px;
   z-index: 2000;
   background: rgba(0, 0, 0, 0.8); }
   .mobile-nav:hover {
@@ -6060,6 +6066,8 @@ h3 {
   @media all and (max-width: 730px) {
     .mobile-nav {
       display: block; } }
+  .mobile-nav .hud-btn {
+    font-size: 13px; }
 
 [data-magellan-expedition], [data-magellan-expedition-clone] {
   height: 113px;
@@ -6211,6 +6219,16 @@ p {
   margin-right: 10px;
   font-size: 40px;
   text-decoration: none; }
+
+.bio-photo {
+  background: url(../img/photo-me-hover.jpg) no-repeat;
+  background-size: 100%;
+  cursor: crosshair; }
+  .bio-photo img {
+    opacity: 1;
+    transition: opacity .5s ease-out; }
+  .bio-photo:hover img {
+    opacity: 0; }
 
 #clients {
   position: relative;
@@ -6376,6 +6394,15 @@ footer {
     transition: all .3s ease-out; }
     footer #footer .back-to-top:hover {
       background-position: -9px -5px; }
+  @media all and (max-width: 1025px) {
+    footer #footer {
+      text-align: center; }
+      footer #footer .back-to-top {
+        left: 0;
+        margin: 30px auto 40px;
+        background-position: 0 0; }
+        footer #footer .back-to-top:hover {
+          background-position: 0 -5px; } }
 
 @media only screen and (max-width: 40em) {
   .back-to-top {

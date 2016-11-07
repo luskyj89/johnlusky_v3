@@ -69,6 +69,10 @@ a {
         color: $white;
     }
 
+    &:focus {
+        color: $blue;
+    }
+
     &.link-button {
         font-size: 18px;
         text-decoration: none;
@@ -125,7 +129,7 @@ h3 {
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 999;
-    opacity: .3;
+    opacity: .36;
     animation-name: lightsdown;
     animation-duration: 4s;
     animation-play-state: running;
@@ -142,7 +146,7 @@ h3 {
     }
 
     100% {
-        opacity: .3;
+        opacity: .36;
     }
 }
 
@@ -224,6 +228,14 @@ h3 {
         background-size: cover;
     }
 
+    @media all and (max-height: 590px) {
+
+        .idd-hdr {
+            display: none;
+        }
+
+    }
+
 }
 
 .explore {
@@ -298,6 +310,7 @@ h3 {
     left: 0;
     width: 100%;
     margin-left: 0;
+    padding: 15px 20px;
     z-index: 2000;
     background: rgba(0, 0, 0, 0.8);
 
@@ -307,6 +320,10 @@ h3 {
 
     @media all and (max-width: 730px) {
         display: block;
+    }
+
+    .hud-btn {
+        font-size: 13px;
     }
 }
 
@@ -552,6 +569,25 @@ p {
 
 }
 
+.bio-photo {
+    background: url(../img/photo-me-hover.jpg) no-repeat;
+    background-size: 100%;
+    cursor: crosshair;
+
+    img {
+        opacity: 1;
+        transition: opacity .5s ease-out;
+    }
+
+    &:hover {
+
+        img {
+            opacity: 0;
+        }
+
+    }
+
+}
 
 /// Work
 
@@ -770,6 +806,21 @@ footer {
 			}
 
 		}
+
+        @media all and (max-width: 1025px) {
+            text-align: center;
+
+            .back-to-top {
+                left: 0;
+                margin: 30px auto 40px;
+                background-position: 0 0;
+
+                &:hover {
+                    background-position: 0 -5px;
+                }
+            }
+
+        }
 
 	}
 

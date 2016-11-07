@@ -42,19 +42,6 @@ function rollInTopNav() {
 // Video BG and HUD Control
 function videoStarter() {
 
-	$('#stats').vide({
-		mp4:'video/stats-clip.mp4',
-		ogv:'video/stats-clip.ogv',
-		webm:'video/stats-clip.webm',
-		poster:'img/space-poster.jpg',
-		}, {
-		loop: true,
-		muted: true,
-		autoplay: true,
-		posterType: "jpg",
-		className: "stats"
-	});
-
 	$('#stream-boy').vide({
 		mp4:'video/streamboy-clip.mp4',
 		ogv:'video/streamboy-clip.ogv',
@@ -266,7 +253,7 @@ $(window).scroll( function() {
 		jobTitle.addClass("fade-off");
 	}
 
-	if ( $(window).scrollTop() > 1000 ) {
+	if ( $(window).scrollTop() > frameHeight ) {
 		$( ".bg-triangle" ).animate({
 		    opacity: 1,
 		    top: -120
