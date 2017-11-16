@@ -39,8 +39,6 @@
 
     		<h2 class="idd-hdr">Developer / Designer</h2>
 
-    		<!-- <a class="explore smooth" href="#about">Explore</a> -->
-
             <div id="hud" class="navigation">
                 <a id="hud-about" class="hud-btn smooth-mobile" href="#about" title="About">About</a>
                 <a id="hud-work" class="hud-btn smooth-mobile" href="#work" title="Work">Work</a>
@@ -89,7 +87,7 @@
 
 				<p>If you’d like a more comprehensive rundown
 				of my skills and work experience, you can
-				<a href="files/lusky-resume_webinfo.pdf" target="_blank">download my resume</a>.</p>
+				<a href="files/lusky-resume-2017.pdf" target="_blank">download my resume</a>.</p>
 			</div>
 		</div>
 
