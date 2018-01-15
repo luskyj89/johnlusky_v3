@@ -5995,6 +5995,10 @@ h3 {
 ::-moz-selection {
   background: #0082ff; }
 
+.private {
+  display: none;
+  text-align: center; }
+
 .space {
   position: absolute;
   top: 0;

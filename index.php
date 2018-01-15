@@ -94,9 +94,27 @@
 		<div class="row" id="work">
 			<div class="large-12 columns">
 				<h2>Work</h2>
-                <p class="medium-centered more-margin">Unfortunately, contractual restrictions prohibit me from showing some of my most recent and relevant work publicly. Here's a list of some notable clients I have experience working with. If you'd like to see my work, please <a href="#contact">contact me directly</a>.
+                <p class="not-private medium-centered more-margin">Unfortunately, contractual restrictions prohibit me from showing some of my most recent and relevant work publicly. Here's a list of some notable clients I have experience working with. If you'd like to see my work, please <a href="#contact">contact me directly</a>.
+
+                <p class="private medium-centered more-margin"><s>Unfortunately, contractual restrictions prohibit me from showing some of my most recent and relevant work publicly.</s> <br/><br/> <strong><em>Private work list enabled.</em></strong> <br/><br/> Here's a list of some notable clients I have experience working with. If you'd like to see my work, please <a href="#contact">contact me directly</a>.
 
                 <figure id="clients"></figure>
+
+                <div class="private">
+                    <p><a href="http://bostonmarathonfilm.com/" target="_blank">http://bostonmarathonfilm.com/</a></p>
+                    <p><a href="http://makeyourhawaiiscape.com/" target="_blank">http://makeyourhawaiiscape.com/</a></p>
+                    <p><a href="http://musiclabexperience.com/ipad-app/" target="_blank">Hard Rock Hotels Music Lab iPad App</a></p>
+                    <p><a href="http://johnlusky.com/fl/famehouse/tour-tumblr/" target="_blank">Maroon 5 2016 Tour Tumblr (Intro Animation Beta)</a></p>
+                    <p><a href="http://trednatural.com/" target="_blank">http://trednatural.com/</a></p>
+                    <p><a href="http://streamboy.multitoad.com/" target="_blank">Twitch Frame Web App (Description down below)</a></p>
+                    <p><a href="http://tr2ck.net/VMU/diftd/index.php" target="_blank">Virgin Mobile Do It For The Data Promo</a></p>
+                    <p><a href="https://serve.com/tax-refund" target="_blank">https://serve.com/tax-refund</a></p>
+                    <p><a href="http://tr2ck.net/VX/sites/loyalty/" target="_blank">Virgin America Loyalty Made Me Do It Promo</a></p>
+                    <p><a href="http://tr2ck.net/VX/sites/higher-experience-mobile/" target="_blank">Higher Experience Mobile Site</a></p>
+                    <p><a href="http://frombransonwithlove.com/" target="_blank">http://frombransonwithlove.com/</a></p>
+                    <p><a href="http://tr2ck.net/VX/sites/here-on-biz/" target="_blank">Virgin America Here On Biz Promo</a></p>
+    				<p><a href="http://fancontest.tcm.com" target="_blank">http://fancontest.tcm.com</a></p>
+                </div>
 
                 <hr>
 
